@@ -1,0 +1,3785 @@
+{
+  "version": 1,
+  "season": "2026-27",
+  "teams": {
+    "ATL": {
+      "team": "Atlanta Hawks",
+      "players": [
+        "Nickeil Alexander-Walker",
+        "Jalen Wilson",
+        "Jock Landale",
+        "Zuby Ejiofor",
+        "Henri Veesaar",
+        "Kingston Flemings",
+        "CJ McCollum",
+        "Ryan Nembhard",
+        "Dyson Daniels",
+        "Jonathan Kuminga",
+        "Luguentz Dort",
+        "Asa Newell",
+        "Corey Kispert",
+        "Jalen Johnson",
+        "Devin Carter",
+        "Aaron Wiggins",
+        "Buddy Hield",
+        "Onyeka Okongwu",
+        "Mouhamed Gueye"
+      ]
+    },
+    "BOS": {
+      "team": "Boston Celtics",
+      "players": [
+        "Luka Garza",
+        "Dillon Mitchell",
+        "Tucker DeVries",
+        "Milos Uzan",
+        "Ron Harper Jr.",
+        "Chris Cenac Jr.",
+        "Mitchell Robinson",
+        "Mike Conley",
+        "Amari Williams",
+        "Max Shulga",
+        "Jordan Walsh",
+        "Hugo Gonz\u00e1lez",
+        "Sam Hauser",
+        "Jayson Tatum",
+        "Baylor Scheierman",
+        "Derrick White",
+        "Neemias Queta",
+        "Paul George",
+        "Payton Pritchard"
+      ]
+    },
+    "CHI": {
+      "team": "Chicago Bulls",
+      "players": [
+        "Leonard Miller",
+        "Matas Buzelis",
+        "Patrick Williams",
+        "Nic Claxton",
+        "Jalen Smith",
+        "Rob Dillingham",
+        "Isaac Okoro",
+        "Noa Essengue",
+        "Tre Jones",
+        "Josh Giddey",
+        "Zach Collins",
+        "Caleb Wilson",
+        "Dailyn Swain",
+        "Jaylin Sellers",
+        "Tobe Awaka",
+        "Norman Powell"
+      ]
+    },
+    "CLE": {
+      "team": "Cleveland Cavaliers",
+      "players": [
+        "Craig Porter Jr.",
+        "Jaylon Tyson",
+        "Donovan Mitchell",
+        "Evan Mobley",
+        "Jarrett Allen",
+        "Tyrese Proctor",
+        "Sam Merrill",
+        "James Harden",
+        "Nae'Qwan Tomlin",
+        "Ernest Udeh Jr.",
+        "Meleek Thomas",
+        "Thomas Bryant",
+        "Mario Hezonja",
+        "Peyton Watson"
+      ]
+    },
+    "DAL": {
+      "team": "Dallas Mavericks",
+      "players": [
+        "Daniel Gafford",
+        "Jett Howard",
+        "Moussa Cisse",
+        "Tarik Biberovic",
+        "Morez Johnson Jr.",
+        "Sergio de Larrea",
+        "Tobi Lawal",
+        "P.J. Washington",
+        "Santi Aldama",
+        "Marcus Sasser",
+        "Kyrie Irving",
+        "Cooper Flagg",
+        "Zaccharie Risacher",
+        "Max Christie",
+        "Naji Marshall",
+        "Caleb Martin",
+        "Dereck Lively II"
+      ]
+    },
+    "DEN": {
+      "team": "Denver Nuggets",
+      "players": [
+        "Nikola Joki\u0107",
+        "Julian Strawther",
+        "Cameron Johnson",
+        "Zeke Nnaji",
+        "DaRon Holmes",
+        "Jamal Murray",
+        "Aaron Gordon",
+        "Christian Braun",
+        "Trevon Brazile",
+        "Tyus Jones",
+        "Marvin Bagley III",
+        "Spencer Jones",
+        "Bryce Hopkins"
+      ]
+    },
+    "DET": {
+      "team": "Detroit Pistons",
+      "players": [
+        "Taurean Prince",
+        "Elijah Harkless",
+        "Javonte Green",
+        "Kevin Huerter",
+        "John Collins",
+        "Ebuka Okorie",
+        "Ugonna Onyenso",
+        "Tolu Smith",
+        "Daniss Jenkins",
+        "Ausar Thompson",
+        "Gary Harris",
+        "Chaz Lanier",
+        "Paul Reed",
+        "Duncan Robinson",
+        "Cade Cunningham",
+        "Ron Holland",
+        "Isaiah Joe"
+      ]
+    },
+    "GSW": {
+      "team": "Golden State Warriors",
+      "players": [
+        "Brandin Podziemski",
+        "Stephen Curry",
+        "Moses Moody",
+        "Jimmy Butler",
+        "Will Richard",
+        "Gui Santos",
+        "Kristaps Porzi\u0146\u0123is",
+        "Yaxel Lendeborg",
+        "Al Horford",
+        "Charles Bassey",
+        "Draymond Green",
+        "De'Anthony Melton",
+        "Gary Payton II",
+        "Brandon Williams",
+        "Georges Niang",
+        "Dalen Terry"
+      ]
+    },
+    "BKN": {
+      "team": "Brooklyn Nets",
+      "players": [
+        "Michael Porter Jr.",
+        "Noah Clowney",
+        "Terance Mann",
+        "Danny Wolf",
+        "Ben Saraf",
+        "Egor D\u00ebmin",
+        "Nolan Traor\u00e9",
+        "Drake Powell",
+        "Julius Randle",
+        "Tyler Bilodeau",
+        "Mikel Brown Jr.",
+        "Keon Ellis",
+        "Day'Ron Sharpe",
+        "Josh Minott",
+        "Joshua Jefferson",
+        "Moritz Wagner"
+      ]
+    },
+    "CHA": {
+      "team": "Charlotte Hornets",
+      "players": [
+        "Sion James",
+        "Hannes Steinbach",
+        "Christian Anderson Jr.",
+        "Michael Ajayi",
+        "Kylan Boswell",
+        "Coby White",
+        "Pat Connaughton",
+        "Naz Reid",
+        "Dorian Finney-Smith",
+        "Dennis Schr\u00f6der",
+        "Brandon Miller",
+        "Kon Knueppel",
+        "Liam McNeeley",
+        "Ryan Kalkbrenner",
+        "Moussa Diabat\u00e9",
+        "Royce O'Neale",
+        "Tidjane Sala\u00fcn",
+        "Grayson Allen",
+        "Grant Williams"
+      ]
+    },
+    "HOU": {
+      "team": "Houston Rockets",
+      "players": [
+        "Tari Eason",
+        "Rafael Castro",
+        "Sean Pedulla",
+        "Jae'Sean Tate",
+        "Oscar Tshiebwe",
+        "Julian Phillips",
+        "Isaiah Crawford",
+        "Marcus Smart",
+        "Quadir Copeland",
+        "Bogdan Bogdanovi\u0107",
+        "Amen Thompson",
+        "Bruce Thornton",
+        "Kevin Durant",
+        "Fred VanVleet",
+        "Clint Capela",
+        "Jabari Smith Jr.",
+        "Steven Adams",
+        "Alperen \u015eeng\u00fcn",
+        "Reed Sheppard"
+      ]
+    },
+    "IND": {
+      "team": "Indiana Pacers",
+      "players": [
+        "T.J. McConnell",
+        "Braden Smith",
+        "Jalen Slawson",
+        "Kobe Brown",
+        "Larry Nance Jr.",
+        "Kelly Oubre Jr.",
+        "Quenton Jackson",
+        "Jay Huff",
+        "Ivica Zubac",
+        "Jarace Walker",
+        "Andrew Nembhard",
+        "Obi Toppin",
+        "Pascal Siakam",
+        "Johnny Furphy",
+        "Aaron Nesmith",
+        "Tyrese Haliburton",
+        "Ben Sheppard"
+      ]
+    },
+    "LAC": {
+      "team": "LA Clippers",
+      "players": [
+        "Isaiah Jackson",
+        "Bradley Beal",
+        "Jalen Pickett",
+        "Yuki Kawamura",
+        "Jamarion Sharp",
+        "Baba Miller",
+        "Jordan Miller",
+        "Kobe Sanders",
+        "Nick Martinelli",
+        "Rui Hachimura",
+        "Keaton Wagler",
+        "Darius Garland",
+        "Yanic Konan Niederh\u00e4user",
+        "Nicolas Batum",
+        "Brook Lopez",
+        "Johni Broome",
+        "Kris Dunn",
+        "Derrick Jones Jr.",
+        "Cam Christie",
+        "Kawhi Leonard",
+        "Max Strus"
+      ]
+    },
+    "LAL": {
+      "team": "Los Angeles Lakers",
+      "players": [
+        "Cameron Carr",
+        "Matisse Thybulle",
+        "Arthur Kaluma",
+        "Ziaire Williams",
+        "Kevon Looney",
+        "Collin Sexton",
+        "Austin Reaves",
+        "Sandro Mamukelashvili",
+        "Quentin Grimes",
+        "Walker Kessler",
+        "Jarred Vanderbilt",
+        "Chris Ma\u00f1on",
+        "AK Okereke",
+        "Nick Smith Jr.",
+        "Luka Don\u010di\u0107",
+        "Adou Thiero",
+        "Jake LaRavia",
+        "Bronny James",
+        "Jaden Hardy",
+        "Dalton Knecht"
+      ]
+    },
+    "MEM": {
+      "team": "Memphis Grizzlies",
+      "players": [
+        "Walter Clayton",
+        "Karim L\u00f3pez",
+        "Cameron Boozer",
+        "Quinten Post",
+        "Olivier-Maxence Prosper",
+        "Taj Gibson",
+        "Ty Jerome",
+        "Cam Spencer",
+        "Cedric Coward",
+        "D'Angelo Russell",
+        "Brandon Clarke",
+        "Scotty Pippen Jr.",
+        "AJ Johnson",
+        "Zach Edey",
+        "Jaylen Wells",
+        "GG Jackson II",
+        "Isaiah Stewart",
+        "Jerami Grant",
+        "Taylor Hendricks",
+        "Kris Murray"
+      ]
+    },
+    "MIA": {
+      "team": "Miami Heat",
+      "players": [
+        "Jahmir Young",
+        "Nick Richards",
+        "J'Vonne Hadley",
+        "Keshad Johnson",
+        "Klay Thompson",
+        "Vladislav Goldin",
+        "Tim Hardaway Jr.",
+        "Ryan Conwell",
+        "Simone Fontecchio",
+        "Tre Donaldson",
+        "Andrew Wiggins",
+        "Myron Gardner",
+        "Nikola Jovi\u0107",
+        "Dru Smith",
+        "Bobby Portis",
+        "Davion Mitchell",
+        "Pelle Larsson",
+        "Bam Adebayo",
+        "Giannis Antetokounmpo"
+      ]
+    },
+    "MIL": {
+      "team": "Milwaukee Bucks",
+      "players": [
+        "Jericho Sims",
+        "Gary Trent Jr.",
+        "Pete Nance",
+        "Ousmane Dieng",
+        "Nate Ament",
+        "Brayden Burries",
+        "Kam Jones",
+        "Bogoljub Markovic",
+        "A.J. Green",
+        "Tyler Herro",
+        "Ryan Rollins",
+        "Caris LeVert",
+        "Myles Turner",
+        "Kevin Porter Jr.",
+        "Kasparas Jaku\u010dionis",
+        "Kel'el Ware",
+        "Kyle Kuzma",
+        "Jaime Jaquez Jr."
+      ]
+    },
+    "MIN": {
+      "team": "Minnesota Timberwolves",
+      "players": [
+        "LaMelo Ball",
+        "Donte DiVincenzo",
+        "Anthony Edwards",
+        "Jaden McDaniels",
+        "Cody Williams",
+        "Terrence Shannon Jr.",
+        "Rudy Gobert",
+        "Joan Beringer",
+        "Bones Hyland",
+        "Enrique Freeman",
+        "Isaiah Evans",
+        "Trey Lyles",
+        "Jaylen Clark",
+        "Ayo Dosunmu"
+      ]
+    },
+    "NOP": {
+      "team": "New Orleans Pelicans",
+      "players": [
+        "Jeremiah Fears",
+        "Malik Dia",
+        "Trendon Watford",
+        "Caleb Houstan",
+        "Christian Koloko",
+        "Jaron Pierre Jr.",
+        "Kobe Bufkin",
+        "DeAndre Jordan",
+        "Bryce McGowens",
+        "Micah Peavy",
+        "Zion Williamson",
+        "Derik Queen",
+        "Trey Murphy III",
+        "Karlo Matkovi\u0107",
+        "Saddiq Bey",
+        "Yves Missi",
+        "Dejounte Murray",
+        "Herbert Jones",
+        "Jordan Hawkins",
+        "Jordan Poole"
+      ]
+    },
+    "NYK": {
+      "team": "New York Knicks",
+      "players": [
+        "Karl-Anthony Towns",
+        "Josh Hart",
+        "Miles McBride",
+        "Tyler Kolek",
+        "Pac\u00f4me Dadiet",
+        "OG Anunoby",
+        "Jalen Brunson",
+        "Mikal Bridges",
+        "Andre Drummond",
+        "Mohamed Diawara",
+        "Landry Shamet",
+        "Jose Alvarado",
+        "Jordan Clarkson"
+      ]
+    },
+    "OKC": {
+      "team": "Oklahoma City Thunder",
+      "players": [
+        "Chet Holmgren",
+        "Kenrich Williams",
+        "Isaiah Hartenstein",
+        "Otega Oweh",
+        "Brooks Barnhizer",
+        "Josh Dix",
+        "Bennett Stirtz",
+        "Aday Mara",
+        "Jalen Williams",
+        "Shai Gilgeous-Alexander",
+        "Ajay Mitchell",
+        "Thomas Sorber",
+        "Jaylin Williams",
+        "Alex Caruso",
+        "Nikola Topi\u0107",
+        "Jared McCain",
+        "Cason Wallace"
+      ]
+    },
+    "ORL": {
+      "team": "Orlando Magic",
+      "players": [
+        "Anthony Black",
+        "Desmond Bane",
+        "Goga Bitadze",
+        "Franz Wagner",
+        "Tristan Da Silva",
+        "Wendell Carter Jr.",
+        "Jalen Suggs",
+        "Jase Richardson",
+        "Noah Penda",
+        "Paolo Banchero",
+        "Jamal Cain",
+        "Izaiyah Nelson",
+        "Colin Castleton",
+        "Nikola Vu\u010devi\u0107",
+        "Jevon Carter",
+        "Jonathan Isaac"
+      ]
+    },
+    "PHI": {
+      "team": "Philadelphia 76ers",
+      "players": [
+        "Labaron Philon Jr.",
+        "Kentavious Caldwell-Pope",
+        "LeBron James",
+        "Rayan Rupert",
+        "Duke Miles",
+        "Caleb Love",
+        "Anfernee Simons",
+        "Dean Wade",
+        "Ariel Hukporti",
+        "Jaylen Brown",
+        "Dominick Barlow",
+        "Jabari Walker",
+        "Justin Edwards",
+        "VJ Edgecombe",
+        "Joel Embiid",
+        "Adem Bona",
+        "Tyrese Maxey"
+      ]
+    },
+    "POR": {
+      "team": "Portland Trail Blazers",
+      "players": [
+        "Ja Morant",
+        "Scoot Henderson",
+        "Deni Avdija",
+        "Jrue Holiday",
+        "Donovan Clingan",
+        "V\u00edt Krej\u010d\u00ed",
+        "Yang Hansen",
+        "Damian Lillard",
+        "Shaedon Sharpe",
+        "Toumani Camara",
+        "Sidy Cissoko",
+        "Robert Williams",
+        "Branden Carlson",
+        "Micah Potter",
+        "John Tonje",
+        "Jeremy Sochan"
+      ]
+    },
+    "SAC": {
+      "team": "Sacramento Kings",
+      "players": [
+        "Zach LaVine",
+        "De'Andre Hunter",
+        "Domantas Sabonis",
+        "Malik Monk",
+        "Maxime Raynaud",
+        "Nique Clifford",
+        "Keegan Murray",
+        "Killian Hayes",
+        "Daeqwon Plowden",
+        "Jonathan Mogbo",
+        "Darius Acuff Jr.",
+        "Alex Karaban",
+        "Emanuel Sharp",
+        "Adam Flagler",
+        "Precious Achiuwa"
+      ]
+    },
+    "SAS": {
+      "team": "San Antonio Spurs",
+      "players": [
+        "Jayden Quaintance",
+        "Taelon Peter",
+        "David Jones Garc\u00eda",
+        "Jordan McLaughlin",
+        "Harrison Barnes",
+        "Tobias Harris",
+        "Maliq Brown",
+        "Ja'Kobi Gillespie",
+        "Tarris Reed Jr.",
+        "Keldon Johnson",
+        "Julian Champagnie",
+        "De'Aaron Fox",
+        "Luke Kornet",
+        "Dylan Harper",
+        "Carter Bryant",
+        "Stephon Castle",
+        "Devin Vassell",
+        "Victor Wembanyama"
+      ]
+    },
+    "TOR": {
+      "team": "Toronto Raptors",
+      "players": [
+        "Collin Murray-Boyles",
+        "Malachi Smith",
+        "Andre Jackson Jr.",
+        "Trey Jemison",
+        "Nate Bittle",
+        "Kyle Anderson",
+        "Allen Graves",
+        "Alijah Martin",
+        "Jaden Bradley",
+        "Chucky Hepburn",
+        "RJ Barrett",
+        "Brandon Ingram",
+        "Jamison Battle",
+        "Scottie Barnes",
+        "Immanuel Quickley",
+        "Jamal Shead",
+        "Ja'Kobe Walter",
+        "Trayce Jackson-Davis",
+        "Jakob Poeltl",
+        "Gradey Dick"
+      ]
+    },
+    "UTA": {
+      "team": "Utah Jazz",
+      "players": [
+        "Bez Mbeng",
+        "Harrison Ingram",
+        "Jaxson Hayes",
+        "Josh Okogie",
+        "Mo Bamba",
+        "Jusuf Nurki\u0107",
+        "Trey Alexander",
+        "Darryn Peterson",
+        "Tamar Bates",
+        "Hayden Gray",
+        "Keyonte George",
+        "Jaren Jackson Jr.",
+        "Ace Bailey",
+        "Kyle Filipowski",
+        "Svi Mykhailiuk",
+        "Lauri Markkanen",
+        "Isaiah Collier",
+        "Josh Green",
+        "Brice Sensabaugh"
+      ]
+    },
+    "WAS": {
+      "team": "Washington Wizards",
+      "players": [
+        "Bilal Coulibaly",
+        "Anthony Davis",
+        "Bub Carrington",
+        "Kyshawn George",
+        "Alex Sarr",
+        "Justin Champagnie",
+        "Deandre Ayton",
+        "Will Riley",
+        "Tre Johnson",
+        "Tre Mann",
+        "Tristan Vukcevic",
+        "AJ Dybantsa",
+        "Jamir Watkins",
+        "Felix Okpara",
+        "Trae Young",
+        "Khris Middleton"
+      ]
+    },
+    "PHX": {
+      "team": "Phoenix Suns",
+      "players": [
+        "Jamaree Bouyea",
+        "Haywood Highsmith",
+        "Luke Kennard",
+        "Mark Williams",
+        "Jordan Goodwin",
+        "Collin Gillespie",
+        "Koby Brea",
+        "Koa Peat",
+        "Pat Spencer",
+        "Devin Booker",
+        "Khaman Maluach",
+        "Rasheer Fleming",
+        "Jalen Green",
+        "Miles Bridges",
+        "Oso Ighodaro",
+        "Ryan Dunn",
+        "Dillon Brooks"
+      ]
+    }
+  },
+  "fetched_at": "2026-09-02T23:48:02Z",
+  "players": {
+    "nickeilalexanderwalker": {
+      "player": "Nickeil Alexander-Walker",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "jalenwilson": {
+      "player": "Jalen Wilson",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "jocklandale": {
+      "player": "Jock Landale",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "zubyejiofor": {
+      "player": "Zuby Ejiofor",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "henriveesaar": {
+      "player": "Henri Veesaar",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "kingstonflemings": {
+      "player": "Kingston Flemings",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "cjmccollum": {
+      "player": "CJ McCollum",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "ryannembhard": {
+      "player": "Ryan Nembhard",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "dysondaniels": {
+      "player": "Dyson Daniels",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "jonathankuminga": {
+      "player": "Jonathan Kuminga",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "luguentzdort": {
+      "player": "Luguentz Dort",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "asanewell": {
+      "player": "Asa Newell",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "coreykispert": {
+      "player": "Corey Kispert",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "jalenjohnson": {
+      "player": "Jalen Johnson",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "devincarter": {
+      "player": "Devin Carter",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "aaronwiggins": {
+      "player": "Aaron Wiggins",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "buddyhield": {
+      "player": "Buddy Hield",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "onyekaokongwu": {
+      "player": "Onyeka Okongwu",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "mouhamedgueye": {
+      "player": "Mouhamed Gueye",
+      "team": "Atlanta Hawks",
+      "team_abbreviation": "ATL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ATL.svg"
+    },
+    "lukagarza": {
+      "player": "Luka Garza",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "dillonmitchell": {
+      "player": "Dillon Mitchell",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "tuckerdevries": {
+      "player": "Tucker DeVries",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "milosuzan": {
+      "player": "Milos Uzan",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "ronharperjr": {
+      "player": "Ron Harper Jr.",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "chriscenacjr": {
+      "player": "Chris Cenac Jr.",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "mitchellrobinson": {
+      "player": "Mitchell Robinson",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "mikeconley": {
+      "player": "Mike Conley",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "amariwilliams": {
+      "player": "Amari Williams",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "maxshulga": {
+      "player": "Max Shulga",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "jordanwalsh": {
+      "player": "Jordan Walsh",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "hugogonzalez": {
+      "player": "Hugo Gonz\u00e1lez",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "samhauser": {
+      "player": "Sam Hauser",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "jaysontatum": {
+      "player": "Jayson Tatum",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "baylorscheierman": {
+      "player": "Baylor Scheierman",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "derrickwhite": {
+      "player": "Derrick White",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "neemiasqueta": {
+      "player": "Neemias Queta",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "paulgeorge": {
+      "player": "Paul George",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "paytonpritchard": {
+      "player": "Payton Pritchard",
+      "team": "Boston Celtics",
+      "team_abbreviation": "BOS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg"
+    },
+    "leonardmiller": {
+      "player": "Leonard Miller",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "matasbuzelis": {
+      "player": "Matas Buzelis",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "patrickwilliams": {
+      "player": "Patrick Williams",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "nicclaxton": {
+      "player": "Nic Claxton",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "jalensmith": {
+      "player": "Jalen Smith",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "robdillingham": {
+      "player": "Rob Dillingham",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "isaacokoro": {
+      "player": "Isaac Okoro",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "noaessengue": {
+      "player": "Noa Essengue",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "trejones": {
+      "player": "Tre Jones",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "joshgiddey": {
+      "player": "Josh Giddey",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "zachcollins": {
+      "player": "Zach Collins",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "calebwilson": {
+      "player": "Caleb Wilson",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "dailynswain": {
+      "player": "Dailyn Swain",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "jaylinsellers": {
+      "player": "Jaylin Sellers",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "tobeawaka": {
+      "player": "Tobe Awaka",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "normanpowell": {
+      "player": "Norman Powell",
+      "team": "Chicago Bulls",
+      "team_abbreviation": "CHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHI.svg"
+    },
+    "craigporterjr": {
+      "player": "Craig Porter Jr.",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "jaylontyson": {
+      "player": "Jaylon Tyson",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "donovanmitchell": {
+      "player": "Donovan Mitchell",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "evanmobley": {
+      "player": "Evan Mobley",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "jarrettallen": {
+      "player": "Jarrett Allen",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "tyreseproctor": {
+      "player": "Tyrese Proctor",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "sammerrill": {
+      "player": "Sam Merrill",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "jamesharden": {
+      "player": "James Harden",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "naeqwantomlin": {
+      "player": "Nae'Qwan Tomlin",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "ernestudehjr": {
+      "player": "Ernest Udeh Jr.",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "meleekthomas": {
+      "player": "Meleek Thomas",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "thomasbryant": {
+      "player": "Thomas Bryant",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "mariohezonja": {
+      "player": "Mario Hezonja",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "peytonwatson": {
+      "player": "Peyton Watson",
+      "team": "Cleveland Cavaliers",
+      "team_abbreviation": "CLE",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg"
+    },
+    "danielgafford": {
+      "player": "Daniel Gafford",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "jetthoward": {
+      "player": "Jett Howard",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "moussacisse": {
+      "player": "Moussa Cisse",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "tarikbiberovic": {
+      "player": "Tarik Biberovic",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "morezjohnsonjr": {
+      "player": "Morez Johnson Jr.",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "sergiodelarrea": {
+      "player": "Sergio de Larrea",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "tobilawal": {
+      "player": "Tobi Lawal",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "pjwashington": {
+      "player": "P.J. Washington",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "santialdama": {
+      "player": "Santi Aldama",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "marcussasser": {
+      "player": "Marcus Sasser",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "kyrieirving": {
+      "player": "Kyrie Irving",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "cooperflagg": {
+      "player": "Cooper Flagg",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "zaccharierisacher": {
+      "player": "Zaccharie Risacher",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "maxchristie": {
+      "player": "Max Christie",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "najimarshall": {
+      "player": "Naji Marshall",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "calebmartin": {
+      "player": "Caleb Martin",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "derecklivelyii": {
+      "player": "Dereck Lively II",
+      "team": "Dallas Mavericks",
+      "team_abbreviation": "DAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg"
+    },
+    "nikolajokic": {
+      "player": "Nikola Joki\u0107",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "julianstrawther": {
+      "player": "Julian Strawther",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "cameronjohnson": {
+      "player": "Cameron Johnson",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "zekennaji": {
+      "player": "Zeke Nnaji",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "daronholmes": {
+      "player": "DaRon Holmes",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "jamalmurray": {
+      "player": "Jamal Murray",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "aarongordon": {
+      "player": "Aaron Gordon",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "christianbraun": {
+      "player": "Christian Braun",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "trevonbrazile": {
+      "player": "Trevon Brazile",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "tyusjones": {
+      "player": "Tyus Jones",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "marvinbagleyiii": {
+      "player": "Marvin Bagley III",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "spencerjones": {
+      "player": "Spencer Jones",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "brycehopkins": {
+      "player": "Bryce Hopkins",
+      "team": "Denver Nuggets",
+      "team_abbreviation": "DEN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg"
+    },
+    "taureanprince": {
+      "player": "Taurean Prince",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "elijahharkless": {
+      "player": "Elijah Harkless",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "javontegreen": {
+      "player": "Javonte Green",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "kevinhuerter": {
+      "player": "Kevin Huerter",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "johncollins": {
+      "player": "John Collins",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "ebukaokorie": {
+      "player": "Ebuka Okorie",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "ugonnaonyenso": {
+      "player": "Ugonna Onyenso",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "tolusmith": {
+      "player": "Tolu Smith",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "danissjenkins": {
+      "player": "Daniss Jenkins",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "ausarthompson": {
+      "player": "Ausar Thompson",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "garyharris": {
+      "player": "Gary Harris",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "chazlanier": {
+      "player": "Chaz Lanier",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "paulreed": {
+      "player": "Paul Reed",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "duncanrobinson": {
+      "player": "Duncan Robinson",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "cadecunningham": {
+      "player": "Cade Cunningham",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "ronholland": {
+      "player": "Ron Holland",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "isaiahjoe": {
+      "player": "Isaiah Joe",
+      "team": "Detroit Pistons",
+      "team_abbreviation": "DET",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/DET.svg"
+    },
+    "brandinpodziemski": {
+      "player": "Brandin Podziemski",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "stephencurry": {
+      "player": "Stephen Curry",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "mosesmoody": {
+      "player": "Moses Moody",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "jimmybutler": {
+      "player": "Jimmy Butler",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "willrichard": {
+      "player": "Will Richard",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "guisantos": {
+      "player": "Gui Santos",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "kristapsporzingis": {
+      "player": "Kristaps Porzi\u0146\u0123is",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "yaxellendeborg": {
+      "player": "Yaxel Lendeborg",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "alhorford": {
+      "player": "Al Horford",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "charlesbassey": {
+      "player": "Charles Bassey",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "draymondgreen": {
+      "player": "Draymond Green",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "deanthonymelton": {
+      "player": "De'Anthony Melton",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "garypaytonii": {
+      "player": "Gary Payton II",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "brandonwilliams": {
+      "player": "Brandon Williams",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "georgesniang": {
+      "player": "Georges Niang",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "dalenterry": {
+      "player": "Dalen Terry",
+      "team": "Golden State Warriors",
+      "team_abbreviation": "GSW",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg"
+    },
+    "michaelporterjr": {
+      "player": "Michael Porter Jr.",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "noahclowney": {
+      "player": "Noah Clowney",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "terancemann": {
+      "player": "Terance Mann",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "dannywolf": {
+      "player": "Danny Wolf",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "bensaraf": {
+      "player": "Ben Saraf",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "egordemin": {
+      "player": "Egor D\u00ebmin",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "nolantraore": {
+      "player": "Nolan Traor\u00e9",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "drakepowell": {
+      "player": "Drake Powell",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "juliusrandle": {
+      "player": "Julius Randle",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "tylerbilodeau": {
+      "player": "Tyler Bilodeau",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "mikelbrownjr": {
+      "player": "Mikel Brown Jr.",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "keonellis": {
+      "player": "Keon Ellis",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "dayronsharpe": {
+      "player": "Day'Ron Sharpe",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "joshminott": {
+      "player": "Josh Minott",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "joshuajefferson": {
+      "player": "Joshua Jefferson",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "moritzwagner": {
+      "player": "Moritz Wagner",
+      "team": "Brooklyn Nets",
+      "team_abbreviation": "BKN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/BKN.svg"
+    },
+    "sionjames": {
+      "player": "Sion James",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "hannessteinbach": {
+      "player": "Hannes Steinbach",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "christianandersonjr": {
+      "player": "Christian Anderson Jr.",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "michaelajayi": {
+      "player": "Michael Ajayi",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "kylanboswell": {
+      "player": "Kylan Boswell",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "cobywhite": {
+      "player": "Coby White",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "patconnaughton": {
+      "player": "Pat Connaughton",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "nazreid": {
+      "player": "Naz Reid",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "dorianfinneysmith": {
+      "player": "Dorian Finney-Smith",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "dennisschroder": {
+      "player": "Dennis Schr\u00f6der",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "brandonmiller": {
+      "player": "Brandon Miller",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "konknueppel": {
+      "player": "Kon Knueppel",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "liammcneeley": {
+      "player": "Liam McNeeley",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "ryankalkbrenner": {
+      "player": "Ryan Kalkbrenner",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "moussadiabate": {
+      "player": "Moussa Diabat\u00e9",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "royceoneale": {
+      "player": "Royce O'Neale",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "tidjanesalaun": {
+      "player": "Tidjane Sala\u00fcn",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "graysonallen": {
+      "player": "Grayson Allen",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "grantwilliams": {
+      "player": "Grant Williams",
+      "team": "Charlotte Hornets",
+      "team_abbreviation": "CHA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/CHA.svg"
+    },
+    "tarieason": {
+      "player": "Tari Eason",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "rafaelcastro": {
+      "player": "Rafael Castro",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "seanpedulla": {
+      "player": "Sean Pedulla",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "jaeseantate": {
+      "player": "Jae'Sean Tate",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "oscartshiebwe": {
+      "player": "Oscar Tshiebwe",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "julianphillips": {
+      "player": "Julian Phillips",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "isaiahcrawford": {
+      "player": "Isaiah Crawford",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "marcussmart": {
+      "player": "Marcus Smart",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "quadircopeland": {
+      "player": "Quadir Copeland",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "bogdanbogdanovic": {
+      "player": "Bogdan Bogdanovi\u0107",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "amenthompson": {
+      "player": "Amen Thompson",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "brucethornton": {
+      "player": "Bruce Thornton",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "kevindurant": {
+      "player": "Kevin Durant",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "fredvanvleet": {
+      "player": "Fred VanVleet",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "clintcapela": {
+      "player": "Clint Capela",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "jabarismithjr": {
+      "player": "Jabari Smith Jr.",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "stevenadams": {
+      "player": "Steven Adams",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "alperensengun": {
+      "player": "Alperen \u015eeng\u00fcn",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "reedsheppard": {
+      "player": "Reed Sheppard",
+      "team": "Houston Rockets",
+      "team_abbreviation": "HOU",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg"
+    },
+    "tjmcconnell": {
+      "player": "T.J. McConnell",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "bradensmith": {
+      "player": "Braden Smith",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "jalenslawson": {
+      "player": "Jalen Slawson",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "kobebrown": {
+      "player": "Kobe Brown",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "larrynancejr": {
+      "player": "Larry Nance Jr.",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "kellyoubrejr": {
+      "player": "Kelly Oubre Jr.",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "quentonjackson": {
+      "player": "Quenton Jackson",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "jayhuff": {
+      "player": "Jay Huff",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "ivicazubac": {
+      "player": "Ivica Zubac",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "jaracewalker": {
+      "player": "Jarace Walker",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "andrewnembhard": {
+      "player": "Andrew Nembhard",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "obitoppin": {
+      "player": "Obi Toppin",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "pascalsiakam": {
+      "player": "Pascal Siakam",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "johnnyfurphy": {
+      "player": "Johnny Furphy",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "aaronnesmith": {
+      "player": "Aaron Nesmith",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "tyresehaliburton": {
+      "player": "Tyrese Haliburton",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "bensheppard": {
+      "player": "Ben Sheppard",
+      "team": "Indiana Pacers",
+      "team_abbreviation": "IND",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/IND.svg"
+    },
+    "isaiahjackson": {
+      "player": "Isaiah Jackson",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "bradleybeal": {
+      "player": "Bradley Beal",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "jalenpickett": {
+      "player": "Jalen Pickett",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "yukikawamura": {
+      "player": "Yuki Kawamura",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "jamarionsharp": {
+      "player": "Jamarion Sharp",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "babamiller": {
+      "player": "Baba Miller",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "jordanmiller": {
+      "player": "Jordan Miller",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "kobesanders": {
+      "player": "Kobe Sanders",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "nickmartinelli": {
+      "player": "Nick Martinelli",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "ruihachimura": {
+      "player": "Rui Hachimura",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "keatonwagler": {
+      "player": "Keaton Wagler",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "dariusgarland": {
+      "player": "Darius Garland",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "yanickonanniederhauser": {
+      "player": "Yanic Konan Niederh\u00e4user",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "nicolasbatum": {
+      "player": "Nicolas Batum",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "brooklopez": {
+      "player": "Brook Lopez",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "johnibroome": {
+      "player": "Johni Broome",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "krisdunn": {
+      "player": "Kris Dunn",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "derrickjonesjr": {
+      "player": "Derrick Jones Jr.",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "camchristie": {
+      "player": "Cam Christie",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "kawhileonard": {
+      "player": "Kawhi Leonard",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "maxstrus": {
+      "player": "Max Strus",
+      "team": "LA Clippers",
+      "team_abbreviation": "LAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg"
+    },
+    "cameroncarr": {
+      "player": "Cameron Carr",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "matissethybulle": {
+      "player": "Matisse Thybulle",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "arthurkaluma": {
+      "player": "Arthur Kaluma",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "ziairewilliams": {
+      "player": "Ziaire Williams",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "kevonlooney": {
+      "player": "Kevon Looney",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "collinsexton": {
+      "player": "Collin Sexton",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "austinreaves": {
+      "player": "Austin Reaves",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "sandromamukelashvili": {
+      "player": "Sandro Mamukelashvili",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "quentingrimes": {
+      "player": "Quentin Grimes",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "walkerkessler": {
+      "player": "Walker Kessler",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "jarredvanderbilt": {
+      "player": "Jarred Vanderbilt",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "chrismanon": {
+      "player": "Chris Ma\u00f1on",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "akokereke": {
+      "player": "AK Okereke",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "nicksmithjr": {
+      "player": "Nick Smith Jr.",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "lukadoncic": {
+      "player": "Luka Don\u010di\u0107",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "adouthiero": {
+      "player": "Adou Thiero",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "jakelaravia": {
+      "player": "Jake LaRavia",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "bronnyjames": {
+      "player": "Bronny James",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "jadenhardy": {
+      "player": "Jaden Hardy",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "daltonknecht": {
+      "player": "Dalton Knecht",
+      "team": "Los Angeles Lakers",
+      "team_abbreviation": "LAL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg"
+    },
+    "walterclayton": {
+      "player": "Walter Clayton",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "karimlopez": {
+      "player": "Karim L\u00f3pez",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "cameronboozer": {
+      "player": "Cameron Boozer",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "quintenpost": {
+      "player": "Quinten Post",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "oliviermaxenceprosper": {
+      "player": "Olivier-Maxence Prosper",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "tajgibson": {
+      "player": "Taj Gibson",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "tyjerome": {
+      "player": "Ty Jerome",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "camspencer": {
+      "player": "Cam Spencer",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "cedriccoward": {
+      "player": "Cedric Coward",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "dangelorussell": {
+      "player": "D'Angelo Russell",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "brandonclarke": {
+      "player": "Brandon Clarke",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "scottypippenjr": {
+      "player": "Scotty Pippen Jr.",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "ajjohnson": {
+      "player": "AJ Johnson",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "zachedey": {
+      "player": "Zach Edey",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "jaylenwells": {
+      "player": "Jaylen Wells",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "ggjacksonii": {
+      "player": "GG Jackson II",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "isaiahstewart": {
+      "player": "Isaiah Stewart",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "jeramigrant": {
+      "player": "Jerami Grant",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "taylorhendricks": {
+      "player": "Taylor Hendricks",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "krismurray": {
+      "player": "Kris Murray",
+      "team": "Memphis Grizzlies",
+      "team_abbreviation": "MEM",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MEM.svg"
+    },
+    "jahmiryoung": {
+      "player": "Jahmir Young",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "nickrichards": {
+      "player": "Nick Richards",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "jvonnehadley": {
+      "player": "J'Vonne Hadley",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "keshadjohnson": {
+      "player": "Keshad Johnson",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "klaythompson": {
+      "player": "Klay Thompson",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "vladislavgoldin": {
+      "player": "Vladislav Goldin",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "timhardawayjr": {
+      "player": "Tim Hardaway Jr.",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "ryanconwell": {
+      "player": "Ryan Conwell",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "simonefontecchio": {
+      "player": "Simone Fontecchio",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "tredonaldson": {
+      "player": "Tre Donaldson",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "andrewwiggins": {
+      "player": "Andrew Wiggins",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "myrongardner": {
+      "player": "Myron Gardner",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "nikolajovic": {
+      "player": "Nikola Jovi\u0107",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "drusmith": {
+      "player": "Dru Smith",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "bobbyportis": {
+      "player": "Bobby Portis",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "davionmitchell": {
+      "player": "Davion Mitchell",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "pellelarsson": {
+      "player": "Pelle Larsson",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "bamadebayo": {
+      "player": "Bam Adebayo",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "giannisantetokounmpo": {
+      "player": "Giannis Antetokounmpo",
+      "team": "Miami Heat",
+      "team_abbreviation": "MIA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg"
+    },
+    "jerichosims": {
+      "player": "Jericho Sims",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "garytrentjr": {
+      "player": "Gary Trent Jr.",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "petenance": {
+      "player": "Pete Nance",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "ousmanedieng": {
+      "player": "Ousmane Dieng",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "nateament": {
+      "player": "Nate Ament",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "braydenburries": {
+      "player": "Brayden Burries",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "kamjones": {
+      "player": "Kam Jones",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "bogoljubmarkovic": {
+      "player": "Bogoljub Markovic",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "ajgreen": {
+      "player": "A.J. Green",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "tylerherro": {
+      "player": "Tyler Herro",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "ryanrollins": {
+      "player": "Ryan Rollins",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "carislevert": {
+      "player": "Caris LeVert",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "mylesturner": {
+      "player": "Myles Turner",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "kevinporterjr": {
+      "player": "Kevin Porter Jr.",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "kasparasjakucionis": {
+      "player": "Kasparas Jaku\u010dionis",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "kelelware": {
+      "player": "Kel'el Ware",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "kylekuzma": {
+      "player": "Kyle Kuzma",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "jaimejaquezjr": {
+      "player": "Jaime Jaquez Jr.",
+      "team": "Milwaukee Bucks",
+      "team_abbreviation": "MIL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIL.svg"
+    },
+    "lameloball": {
+      "player": "LaMelo Ball",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "dontedivincenzo": {
+      "player": "Donte DiVincenzo",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "anthonyedwards": {
+      "player": "Anthony Edwards",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "jadenmcdaniels": {
+      "player": "Jaden McDaniels",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "codywilliams": {
+      "player": "Cody Williams",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "terrenceshannonjr": {
+      "player": "Terrence Shannon Jr.",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "rudygobert": {
+      "player": "Rudy Gobert",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "joanberinger": {
+      "player": "Joan Beringer",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "boneshyland": {
+      "player": "Bones Hyland",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "enriquefreeman": {
+      "player": "Enrique Freeman",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "isaiahevans": {
+      "player": "Isaiah Evans",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "treylyles": {
+      "player": "Trey Lyles",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "jaylenclark": {
+      "player": "Jaylen Clark",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "ayodosunmu": {
+      "player": "Ayo Dosunmu",
+      "team": "Minnesota Timberwolves",
+      "team_abbreviation": "MIN",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/MIN.svg"
+    },
+    "jeremiahfears": {
+      "player": "Jeremiah Fears",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "malikdia": {
+      "player": "Malik Dia",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "trendonwatford": {
+      "player": "Trendon Watford",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "calebhoustan": {
+      "player": "Caleb Houstan",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "christiankoloko": {
+      "player": "Christian Koloko",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "jaronpierrejr": {
+      "player": "Jaron Pierre Jr.",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "kobebufkin": {
+      "player": "Kobe Bufkin",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "deandrejordan": {
+      "player": "DeAndre Jordan",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "brycemcgowens": {
+      "player": "Bryce McGowens",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "micahpeavy": {
+      "player": "Micah Peavy",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "zionwilliamson": {
+      "player": "Zion Williamson",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "derikqueen": {
+      "player": "Derik Queen",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "treymurphyiii": {
+      "player": "Trey Murphy III",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "karlomatkovic": {
+      "player": "Karlo Matkovi\u0107",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "saddiqbey": {
+      "player": "Saddiq Bey",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "yvesmissi": {
+      "player": "Yves Missi",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "dejountemurray": {
+      "player": "Dejounte Murray",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "herbertjones": {
+      "player": "Herbert Jones",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "jordanhawkins": {
+      "player": "Jordan Hawkins",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "jordanpoole": {
+      "player": "Jordan Poole",
+      "team": "New Orleans Pelicans",
+      "team_abbreviation": "NOP",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NOP.svg"
+    },
+    "karlanthonytowns": {
+      "player": "Karl-Anthony Towns",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "joshhart": {
+      "player": "Josh Hart",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "milesmcbride": {
+      "player": "Miles McBride",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "tylerkolek": {
+      "player": "Tyler Kolek",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "pacomedadiet": {
+      "player": "Pac\u00f4me Dadiet",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "oganunoby": {
+      "player": "OG Anunoby",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "jalenbrunson": {
+      "player": "Jalen Brunson",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "mikalbridges": {
+      "player": "Mikal Bridges",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "andredrummond": {
+      "player": "Andre Drummond",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "mohameddiawara": {
+      "player": "Mohamed Diawara",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "landryshamet": {
+      "player": "Landry Shamet",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "josealvarado": {
+      "player": "Jose Alvarado",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "jordanclarkson": {
+      "player": "Jordan Clarkson",
+      "team": "New York Knicks",
+      "team_abbreviation": "NYK",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg"
+    },
+    "chetholmgren": {
+      "player": "Chet Holmgren",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "kenrichwilliams": {
+      "player": "Kenrich Williams",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "isaiahhartenstein": {
+      "player": "Isaiah Hartenstein",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "otegaoweh": {
+      "player": "Otega Oweh",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "brooksbarnhizer": {
+      "player": "Brooks Barnhizer",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "joshdix": {
+      "player": "Josh Dix",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "bennettstirtz": {
+      "player": "Bennett Stirtz",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "adaymara": {
+      "player": "Aday Mara",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "jalenwilliams": {
+      "player": "Jalen Williams",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "shaigilgeousalexander": {
+      "player": "Shai Gilgeous-Alexander",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "ajaymitchell": {
+      "player": "Ajay Mitchell",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "thomassorber": {
+      "player": "Thomas Sorber",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "jaylinwilliams": {
+      "player": "Jaylin Williams",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "alexcaruso": {
+      "player": "Alex Caruso",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "nikolatopic": {
+      "player": "Nikola Topi\u0107",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "jaredmccain": {
+      "player": "Jared McCain",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "casonwallace": {
+      "player": "Cason Wallace",
+      "team": "Oklahoma City Thunder",
+      "team_abbreviation": "OKC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg"
+    },
+    "anthonyblack": {
+      "player": "Anthony Black",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "desmondbane": {
+      "player": "Desmond Bane",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "gogabitadze": {
+      "player": "Goga Bitadze",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "franzwagner": {
+      "player": "Franz Wagner",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "tristandasilva": {
+      "player": "Tristan Da Silva",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "wendellcarterjr": {
+      "player": "Wendell Carter Jr.",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "jalensuggs": {
+      "player": "Jalen Suggs",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "jaserichardson": {
+      "player": "Jase Richardson",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "noahpenda": {
+      "player": "Noah Penda",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "paolobanchero": {
+      "player": "Paolo Banchero",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "jamalcain": {
+      "player": "Jamal Cain",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "izaiyahnelson": {
+      "player": "Izaiyah Nelson",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "colincastleton": {
+      "player": "Colin Castleton",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "nikolavucevic": {
+      "player": "Nikola Vu\u010devi\u0107",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "jevoncarter": {
+      "player": "Jevon Carter",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "jonathanisaac": {
+      "player": "Jonathan Isaac",
+      "team": "Orlando Magic",
+      "team_abbreviation": "ORL",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/ORL.svg"
+    },
+    "labaronphilonjr": {
+      "player": "Labaron Philon Jr.",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "kentaviouscaldwellpope": {
+      "player": "Kentavious Caldwell-Pope",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "lebronjames": {
+      "player": "LeBron James",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "rayanrupert": {
+      "player": "Rayan Rupert",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "dukemiles": {
+      "player": "Duke Miles",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "caleblove": {
+      "player": "Caleb Love",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "anferneesimons": {
+      "player": "Anfernee Simons",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "deanwade": {
+      "player": "Dean Wade",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "arielhukporti": {
+      "player": "Ariel Hukporti",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "jaylenbrown": {
+      "player": "Jaylen Brown",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "dominickbarlow": {
+      "player": "Dominick Barlow",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "jabariwalker": {
+      "player": "Jabari Walker",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "justinedwards": {
+      "player": "Justin Edwards",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "vjedgecombe": {
+      "player": "VJ Edgecombe",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "joelembiid": {
+      "player": "Joel Embiid",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "adembona": {
+      "player": "Adem Bona",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "tyresemaxey": {
+      "player": "Tyrese Maxey",
+      "team": "Philadelphia 76ers",
+      "team_abbreviation": "PHI",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg"
+    },
+    "jamorant": {
+      "player": "Ja Morant",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "scoothenderson": {
+      "player": "Scoot Henderson",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "deniavdija": {
+      "player": "Deni Avdija",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "jrueholiday": {
+      "player": "Jrue Holiday",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "donovanclingan": {
+      "player": "Donovan Clingan",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "vitkrejci": {
+      "player": "V\u00edt Krej\u010d\u00ed",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "yanghansen": {
+      "player": "Yang Hansen",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "damianlillard": {
+      "player": "Damian Lillard",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "shaedonsharpe": {
+      "player": "Shaedon Sharpe",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "toumanicamara": {
+      "player": "Toumani Camara",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "sidycissoko": {
+      "player": "Sidy Cissoko",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "robertwilliams": {
+      "player": "Robert Williams",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "brandencarlson": {
+      "player": "Branden Carlson",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "micahpotter": {
+      "player": "Micah Potter",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "johntonje": {
+      "player": "John Tonje",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "jeremysochan": {
+      "player": "Jeremy Sochan",
+      "team": "Portland Trail Blazers",
+      "team_abbreviation": "POR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg"
+    },
+    "zachlavine": {
+      "player": "Zach LaVine",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "deandrehunter": {
+      "player": "De'Andre Hunter",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "domantassabonis": {
+      "player": "Domantas Sabonis",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "malikmonk": {
+      "player": "Malik Monk",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "maximeraynaud": {
+      "player": "Maxime Raynaud",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "niqueclifford": {
+      "player": "Nique Clifford",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "keeganmurray": {
+      "player": "Keegan Murray",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "killianhayes": {
+      "player": "Killian Hayes",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "daeqwonplowden": {
+      "player": "Daeqwon Plowden",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "jonathanmogbo": {
+      "player": "Jonathan Mogbo",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "dariusacuffjr": {
+      "player": "Darius Acuff Jr.",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "alexkaraban": {
+      "player": "Alex Karaban",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "emanuelsharp": {
+      "player": "Emanuel Sharp",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "adamflagler": {
+      "player": "Adam Flagler",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "preciousachiuwa": {
+      "player": "Precious Achiuwa",
+      "team": "Sacramento Kings",
+      "team_abbreviation": "SAC",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAC.svg"
+    },
+    "jaydenquaintance": {
+      "player": "Jayden Quaintance",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "taelonpeter": {
+      "player": "Taelon Peter",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "davidjonesgarcia": {
+      "player": "David Jones Garc\u00eda",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "jordanmclaughlin": {
+      "player": "Jordan McLaughlin",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "harrisonbarnes": {
+      "player": "Harrison Barnes",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "tobiasharris": {
+      "player": "Tobias Harris",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "maliqbrown": {
+      "player": "Maliq Brown",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "jakobigillespie": {
+      "player": "Ja'Kobi Gillespie",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "tarrisreedjr": {
+      "player": "Tarris Reed Jr.",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "keldonjohnson": {
+      "player": "Keldon Johnson",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "julianchampagnie": {
+      "player": "Julian Champagnie",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "deaaronfox": {
+      "player": "De'Aaron Fox",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "lukekornet": {
+      "player": "Luke Kornet",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "dylanharper": {
+      "player": "Dylan Harper",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "carterbryant": {
+      "player": "Carter Bryant",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "stephoncastle": {
+      "player": "Stephon Castle",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "devinvassell": {
+      "player": "Devin Vassell",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "victorwembanyama": {
+      "player": "Victor Wembanyama",
+      "team": "San Antonio Spurs",
+      "team_abbreviation": "SAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/SAS.svg"
+    },
+    "collinmurrayboyles": {
+      "player": "Collin Murray-Boyles",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "malachismith": {
+      "player": "Malachi Smith",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "andrejacksonjr": {
+      "player": "Andre Jackson Jr.",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "treyjemison": {
+      "player": "Trey Jemison",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "natebittle": {
+      "player": "Nate Bittle",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "kyleanderson": {
+      "player": "Kyle Anderson",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "allengraves": {
+      "player": "Allen Graves",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "alijahmartin": {
+      "player": "Alijah Martin",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "jadenbradley": {
+      "player": "Jaden Bradley",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "chuckyhepburn": {
+      "player": "Chucky Hepburn",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "rjbarrett": {
+      "player": "RJ Barrett",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "brandoningram": {
+      "player": "Brandon Ingram",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "jamisonbattle": {
+      "player": "Jamison Battle",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "scottiebarnes": {
+      "player": "Scottie Barnes",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "immanuelquickley": {
+      "player": "Immanuel Quickley",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "jamalshead": {
+      "player": "Jamal Shead",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "jakobewalter": {
+      "player": "Ja'Kobe Walter",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "traycejacksondavis": {
+      "player": "Trayce Jackson-Davis",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "jakobpoeltl": {
+      "player": "Jakob Poeltl",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "gradeydick": {
+      "player": "Gradey Dick",
+      "team": "Toronto Raptors",
+      "team_abbreviation": "TOR",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/TOR.svg"
+    },
+    "bezmbeng": {
+      "player": "Bez Mbeng",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "harrisoningram": {
+      "player": "Harrison Ingram",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "jaxsonhayes": {
+      "player": "Jaxson Hayes",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "joshokogie": {
+      "player": "Josh Okogie",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "mobamba": {
+      "player": "Mo Bamba",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "jusufnurkic": {
+      "player": "Jusuf Nurki\u0107",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "treyalexander": {
+      "player": "Trey Alexander",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "darrynpeterson": {
+      "player": "Darryn Peterson",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "tamarbates": {
+      "player": "Tamar Bates",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "haydengray": {
+      "player": "Hayden Gray",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "keyontegeorge": {
+      "player": "Keyonte George",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "jarenjacksonjr": {
+      "player": "Jaren Jackson Jr.",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "acebailey": {
+      "player": "Ace Bailey",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "kylefilipowski": {
+      "player": "Kyle Filipowski",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "svimykhailiuk": {
+      "player": "Svi Mykhailiuk",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "laurimarkkanen": {
+      "player": "Lauri Markkanen",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "isaiahcollier": {
+      "player": "Isaiah Collier",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "joshgreen": {
+      "player": "Josh Green",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "bricesensabaugh": {
+      "player": "Brice Sensabaugh",
+      "team": "Utah Jazz",
+      "team_abbreviation": "UTA",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/UTA.svg"
+    },
+    "bilalcoulibaly": {
+      "player": "Bilal Coulibaly",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "anthonydavis": {
+      "player": "Anthony Davis",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "bubcarrington": {
+      "player": "Bub Carrington",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "kyshawngeorge": {
+      "player": "Kyshawn George",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "alexsarr": {
+      "player": "Alex Sarr",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "justinchampagnie": {
+      "player": "Justin Champagnie",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "deandreayton": {
+      "player": "Deandre Ayton",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "willriley": {
+      "player": "Will Riley",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "trejohnson": {
+      "player": "Tre Johnson",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "tremann": {
+      "player": "Tre Mann",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "tristanvukcevic": {
+      "player": "Tristan Vukcevic",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "ajdybantsa": {
+      "player": "AJ Dybantsa",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "jamirwatkins": {
+      "player": "Jamir Watkins",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "felixokpara": {
+      "player": "Felix Okpara",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "traeyoung": {
+      "player": "Trae Young",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "khrismiddleton": {
+      "player": "Khris Middleton",
+      "team": "Washington Wizards",
+      "team_abbreviation": "WAS",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg"
+    },
+    "jamareebouyea": {
+      "player": "Jamaree Bouyea",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "haywoodhighsmith": {
+      "player": "Haywood Highsmith",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "lukekennard": {
+      "player": "Luke Kennard",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "markwilliams": {
+      "player": "Mark Williams",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "jordangoodwin": {
+      "player": "Jordan Goodwin",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "collingillespie": {
+      "player": "Collin Gillespie",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "kobybrea": {
+      "player": "Koby Brea",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "koapeat": {
+      "player": "Koa Peat",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "patspencer": {
+      "player": "Pat Spencer",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "devinbooker": {
+      "player": "Devin Booker",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "khamanmaluach": {
+      "player": "Khaman Maluach",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "rasheerfleming": {
+      "player": "Rasheer Fleming",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "jalengreen": {
+      "player": "Jalen Green",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "milesbridges": {
+      "player": "Miles Bridges",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "osoighodaro": {
+      "player": "Oso Ighodaro",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "ryandunn": {
+      "player": "Ryan Dunn",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    },
+    "dillonbrooks": {
+      "player": "Dillon Brooks",
+      "team": "Phoenix Suns",
+      "team_abbreviation": "PHX",
+      "team_logo": "https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg"
+    }
+  }
+}

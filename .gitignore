@@ -1,0 +1,30 @@
+# dependencies
+node_modules/
+
+# build output
+build/
+dist/
+
+# python
+venv/
+__pycache__/
+*.pyc
+
+# media (video editing assets, not part of the NBA site)
+*.mp4
+*.mov
+*.mkv
+*.avi
+raw_inputs/
+style_examples/
+
+# archives
+*.zip
+
+# logs / scratch
+*.log
+output.txt
+*.out.txt
+
+# misc
+.DS_Store

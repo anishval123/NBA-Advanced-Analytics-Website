@@ -1,0 +1,12 @@
+=== Killing old backend ===
+No process listening on 8000
+=== Starting backend ===
+  wait 1: <urlopen error [WinError 10061] No connection could be made because the target machine actively refused it>
+Server ready after ~4s: {"message":"NBA analytics dashboard API is running"}
+/underrated: status=200 count=50 first=LeBron James score=9.733
+/overrated: status=200 count=50 first=Luka Doncic score=5.916
+/volatility: status=200 count=50 first=LeBron James score=1.804
+/role_compression: status=200 count=50 first=LeBron James score=9.39
+/defensive_chaos: status=200 count=50 first=Marcus Smart score=10.77
+=== DONE ===
+Backend PID 17004 left running on port 8000

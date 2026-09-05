@@ -1,0 +1,148 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "check-node-tools",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent\\frontend'; node --version; npm.cmd --version",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-install",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent\\frontend'; npm.cmd install",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-check",
+			"type": "shell",
+			"command": "cmd.exe /c \"cd /d c:\\Users\\srini\\video-editing-agent; python --version; pip --version\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-install",
+			"type": "shell",
+			"command": "cmd.exe /c \"cd /d c:\\Users\\srini\\video-editing-agent; python -m pip install -r backend\\requirements.txt\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "check-node-tools",
+			"type": "shell",
+			"command": "cmd.exe /c \"cd /d c:\\Users\\srini\\video-editing-agent\\frontend; node --version; npm --version\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-install",
+			"type": "shell",
+			"command": "cmd.exe /c \"cd /d c:\\Users\\srini\\video-editing-agent\\frontend; npm.cmd install\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-install",
+			"type": "shell",
+			"command": "cmd.exe /c \"cd /d c:\\Users\\srini\\video-editing-agent\\frontend; npm.cmd install\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "path-check",
+			"type": "shell",
+			"command": "cmd.exe /c \"cd /d c:\\Users\\srini\\video-editing-agent\\frontend && dir\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-install",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent\\frontend'; npm.cmd install",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-install",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent'; python -m pip install -r backend\\requirements.txt",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-build",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent\\frontend'; npm.cmd run build",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-run",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent'; python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-run-8001",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent'; python -m uvicorn backend.main:app --host 127.0.0.1 --port 8001",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-check-route",
+			"type": "shell",
+			"command": "powershell -NoProfile -Command \"Invoke-RestMethod -Uri 'http://127.0.0.1:8001/players' | Select-Object -First 3 | ConvertTo-Json -Depth 5\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-check-route",
+			"type": "shell",
+			"command": "powershell -NoProfile -Command \"$data = Invoke-RestMethod -Uri 'http://127.0.0.1:8001/players'; Write-Output $data[0].player\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-route-check-v2",
+			"type": "shell",
+			"command": "powershell -NoProfile -Command \"$data = Invoke-RestMethod -Uri 'http://127.0.0.1:8001/players'; Write-Output $data[0].player\"",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "backend-route-check-v3",
+			"type": "shell",
+			"command": "$data = Invoke-RestMethod -Uri 'http://127.0.0.1:8001/players'; Write-Output $data[0].player",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-run",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent\\frontend'; npm.cmd run dev -- --host 127.0.0.1 --port 3000",
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-install",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent\\frontend'; npm.cmd install",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "frontend-build",
+			"type": "shell",
+			"command": "cd 'c:\\Users\\srini\\video-editing-agent\\frontend'; npm.cmd run build",
+			"problemMatcher": [],
+			"group": "build"
+		}
+	]
+}

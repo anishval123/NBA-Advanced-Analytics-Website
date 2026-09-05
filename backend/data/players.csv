@@ -1,0 +1,21 @@
+player,team,position,points,rebounds,assists,steals,blocks,minutes,fga,fta,turnovers,team_logo,headshot
+LeBron James,PHI,SF,25.7,7.3,8.3,1.3,0.5,35.2,19.2,7.1,3.6,https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg,https://cdn.nba.com/headshots/nba/latest/260x190/2544.png
+Giannis Antetokounmpo,MIA,PF,30.4,11.5,4.5,1.1,1.2,35.5,20.3,9.4,4.1,https://cdn.nba.com/logos/nba/teams/secondary/web/MIA.svg,https://cdn.nba.com/headshots/nba/latest/260x190/203507.png
+Jayson Tatum,BOS,SF,26.9,8.1,4.1,1.0,0.7,34.8,19.6,6.3,3.2,https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1628369.png
+Marcus Smart,HOU,PG,14.5,3.8,5.8,1.6,0.4,32.7,11.3,4.3,2.4,https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg,https://cdn.nba.com/headshots/nba/latest/260x190/203935.png
+Stephen Curry,GSW,PG,29.4,5.1,6.3,1.0,0.4,33.6,21.4,4.8,3.2,https://cdn.nba.com/logos/nba/teams/secondary/web/GSW.svg,https://cdn.nba.com/headshots/nba/latest/260x190/201939.png
+Kevin Durant,HOU,PF,27.1,6.6,5.0,0.9,1.2,37.2,18.8,5.7,3.1,https://cdn.nba.com/logos/nba/teams/secondary/web/HOU.svg,https://cdn.nba.com/headshots/nba/latest/260x190/201142.png
+Luka Doncic,LAL,PG,33.9,8.6,9.8,1.4,0.5,37.2,22.5,7.8,4.2,https://cdn.nba.com/logos/nba/teams/secondary/web/LAL.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1629029.png
+Joel Embiid,PHI,C,34.7,11.0,5.6,1.0,1.7,34.6,20.5,9.8,3.5,https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg,https://cdn.nba.com/headshots/nba/latest/260x190/203954.png
+Nikola Jokic,DEN,C,26.1,12.3,9.1,1.3,0.7,34.6,17.5,5.9,3.2,https://cdn.nba.com/logos/nba/teams/secondary/web/DEN.svg,https://cdn.nba.com/headshots/nba/latest/260x190/203999.png
+Shai Gilgeous-Alexander,OKC,PG,30.1,5.5,6.2,2.0,0.9,34.4,20.2,7.1,2.8,https://cdn.nba.com/logos/nba/teams/secondary/web/OKC.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1628983.png
+Damian Lillard,POR,PG,24.3,4.4,7.0,1.0,0.3,36.1,18.5,6.2,3.4,https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg,https://cdn.nba.com/headshots/nba/latest/260x190/203081.png
+Anthony Davis,WAS,PF,24.7,12.6,3.5,1.2,2.3,35.5,17.8,5.6,2.6,https://cdn.nba.com/logos/nba/teams/secondary/web/WAS.svg,https://cdn.nba.com/headshots/nba/latest/260x190/203076.png
+Kawhi Leonard,LAC,SF,23.7,6.1,3.6,1.7,0.9,34.2,17.1,4.5,2.1,https://cdn.nba.com/logos/nba/teams/secondary/web/LAC.svg,https://cdn.nba.com/headshots/nba/latest/260x190/202695.png
+Paul George,BOS,SF,22.6,5.2,3.5,1.5,0.4,34.1,17.3,4.2,2.8,https://cdn.nba.com/logos/nba/teams/secondary/web/BOS.svg,https://cdn.nba.com/headshots/nba/latest/260x190/202331.png
+Kyrie Irving,DAL,PG,25.8,5.1,5.3,1.3,0.5,35.6,18.8,4.1,2.7,https://cdn.nba.com/logos/nba/teams/secondary/web/DAL.svg,https://cdn.nba.com/headshots/nba/latest/260x190/202681.png
+Jalen Brunson,NYK,PG,28.7,3.6,6.7,0.9,0.2,35.4,19.5,5.8,2.9,https://cdn.nba.com/logos/nba/teams/secondary/web/NYK.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1628973.png
+Donovan Mitchell,CLE,SG,26.6,5.1,5.1,1.8,0.4,35.5,19.2,5.9,3.3,https://cdn.nba.com/logos/nba/teams/secondary/web/CLE.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1628378.png
+Jaylen Brown,PHI,SG,23.0,5.5,3.6,1.2,0.5,33.1,17.5,4.3,2.5,https://cdn.nba.com/logos/nba/teams/secondary/web/PHI.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1627759.png
+Devin Booker,PHX,SG,27.1,4.5,5.0,1.0,0.3,35.6,18.9,4.8,3.1,https://cdn.nba.com/logos/nba/teams/secondary/web/PHX.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1626164.png
+Ja Morant,POR,PG,27.1,5.9,8.1,1.1,0.3,31.8,19.5,6.2,3.4,https://cdn.nba.com/logos/nba/teams/secondary/web/POR.svg,https://cdn.nba.com/headshots/nba/latest/260x190/1630630.png

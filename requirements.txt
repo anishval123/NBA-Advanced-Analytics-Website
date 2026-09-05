@@ -1,0 +1,11 @@
+moviepy==1.0.3
+numpy==1.21.6
+imageio-ffmpeg==0.4.8
+yt-dlp==2025.10.14
+Flask==3.0.0
+gunicorn==21.2.0
+requests==2.31.0
+beautifulsoup4==4.13.4
+Pillow==11.3.0
+opencv-python==4.11.0.86
+scikit-learn==1.6.1

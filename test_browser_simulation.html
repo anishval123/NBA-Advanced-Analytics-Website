@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Player Data Test</title>
+</head>
+<body>
+    <h1>Testing Player Data Loading</h1>
+    <div id="results"></div>
+    
+    <script>
+        const API_BASE_URL = 'http://localhost:8000';
+        
+        async function testAPI() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<p>Testing API calls...</p>';
+            
+            try {
+                // Test 1: Directory
+                const dirResponse = await fetch(`${API_BASE_URL}/players/all?page=1&page_size=6`);
+                const dirData = await dirResponse.json();
+                
+                // Test 2: Underrated
+                const underratedResponse = await fetch(`${API_BASE_URL}/underrated`);
+                const underratedData = await underratedResponse.json();
+                
+                resultsDiv.innerHTML = `
+                    <h2>✓ API Tests Successful</h2>
+                    <p><strong>Directory:</strong> ${dirData.total} total players, ${dirData.items.length} returned</p>
+                    <p><strong>Underrated:</strong> ${underratedData.length} players</p>
+                    <p><strong>First player:</strong> ${underratedData[0]?.player || 'N/A'}</p>
+                    <p><strong>Team:</strong> ${underratedData[0]?.team || 'N/A'}</p>
+                    <p><strong>Position:</strong> ${underratedData[0]?.position || 'N/A'}</p>
+                    <p><strong>Points:</strong> ${underratedData[0]?.points || 'N/A'}</p>
+                    <p><strong>Assists:</strong> ${underratedData[0]?.assists || 'N/A'}</p>
+                    <p><strong>Headshot:</strong> ${underratedData[0]?.headshot ? '✓ Present' : '✗ Missing'}</p>
+                `;
+            } catch (error) {
+                resultsDiv.innerHTML = `<p style="color: red;">✗ Error: ${error.message}</p>`;
+            }
+        }
+        
+        testAPI();
+    </script>
+</body>
+</html>
