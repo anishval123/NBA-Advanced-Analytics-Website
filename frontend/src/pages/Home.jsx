@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react'
-import { ArrowRight, TrendingUp, Shield, Activity, Layers } from 'lucide-react'
-import { Link } from 'react-router-dom'
+import { ArrowRight, Search, TrendingUp, Shield, Activity, Layers } from 'lucide-react'
+import { Link, useNavigate } from 'react-router-dom'
 import { fetchJson } from '../api/client'
 import LoadingSpinner from '../components/LoadingSpinner'
 import MetricCard from '../components/MetricCard'
+import ModelCard from '../components/ModelCard'
 import { teamGradient } from '../utils/teamColors'
 import { formatScore } from '../utils/formatScore'
 
 export default function Home() {
+  const navigate = useNavigate()
+  const [query, setQuery] = useState('')
   const [stats, setStats] = useState({ total: 0 })
   const [featuredPlayers, setFeaturedPlayers] = useState([])
   const [leaders, setLeaders] = useState([])
@@ -57,25 +60,60 @@ export default function Home() {
     { title: 'Analytics models', value: '5', hint: 'Advanced NBA analytics', accent: 'bg-emerald-600' },
   ]
 
+  const handleSubmit = (event) => {
+    event.preventDefault()
+    const value = query.trim()
+    navigate(value ? `/search?q=${encodeURIComponent(value)}` : '/search')
+  }
+
   return (
     <div className="space-y-6">
-      <section className="border border-slate-200 bg-white p-6 sm:p-8">
-        <div className="max-w-3xl">
-          <p className="text-[11px] font-medium uppercase tracking-[0.24em] text-slate-500">NBA analytics desk</p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">See value beyond the box score.</h1>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-            Track hidden value, defensive disruption, role fit, and volatility in a structured research dashboard built for fast reads and deeper analysis.
-          </p>
-        </div>
+      <section className="relative isolate w-full overflow-hidden border-y border-slate-800 bg-[#0B1220] shadow-[0_30px_80px_rgba(11,18,32,0.18)] lg:rounded-none">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-80"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=1400&q=80')",
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1220] via-[#0B1220]/82 via-[#0B1220]/55 to-[#0B1220]/15" />
 
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Link to="/search" className="inline-flex items-center gap-2 border border-slate-900 bg-slate-900 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-slate-700">
-            Search players
-            <ArrowRight size={16} />
-          </Link>
-          <Link to="/compare" className="inline-flex items-center gap-2 border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-900 transition-colors hover:border-slate-400">
-            Compare players
-          </Link>
+        <div className="relative flex min-h-[640px] w-full items-center px-6 py-12 sm:px-8 lg:min-h-[700px] lg:px-16 xl:px-20">
+          <div className="w-full max-w-[760px] py-8 lg:pl-[64px] xl:pl-[80px]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[#CBD5E1]">THE GAME, BEYOND THE SCORE.</p>
+
+            <h1 className="mt-6 max-w-[620px] text-[42px] font-black leading-[0.95] tracking-[-0.06em] text-[#F8FAFC] sm:text-[52px] lg:text-[80px] lg:leading-[0.95]">
+              Every possession.
+              <span className="mt-2 block">A deeper story.</span>
+            </h1>
+
+            <p className="mt-6 max-w-[520px] text-base leading-7 text-[#CBD5E1] lg:text-lg">
+              Explore player performance, compare teams, and uncover the numbers behind the game.
+            </p>
+
+            <form onSubmit={handleSubmit} className="mt-8 w-full max-w-[700px]">
+              <div className="flex w-full flex-col gap-4 sm:flex-row sm:items-center">
+                <div className="relative flex-1">
+                  <input
+                    value={query}
+                    onChange={(event) => setQuery(event.target.value)}
+                    placeholder="Search players, teams, or matchups"
+                    aria-label="Search players, teams, or matchups"
+                    className="h-[76px] w-full rounded-[16px] border border-white/20 bg-white pl-5 pr-12 text-base text-[#172235] placeholder:text-slate-400 shadow-sm outline-none transition focus:border-[#FF7A1A] focus:ring-2 focus:ring-[#FF7A1A]/25"
+                  />
+                  <Search className="pointer-events-none absolute right-5 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
+                </div>
+
+                <button
+                  type="submit"
+                  className="inline-flex h-[76px] items-center justify-center gap-2 rounded-[16px] bg-[#FF7A1A] px-7 text-base font-semibold text-[#0B1220] shadow-[0_14px_34px_rgba(255,122,26,0.35)] transition hover:bg-[#ff8b3d] focus:outline-none focus:ring-2 focus:ring-[#FF7A1A] focus:ring-offset-2 focus:ring-offset-[#0B1220]"
+                >
+                  Explore Analytics
+                  <ArrowRight className="h-5 w-5" />
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
 

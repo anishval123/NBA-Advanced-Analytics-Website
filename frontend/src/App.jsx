@@ -33,13 +33,17 @@ export default function App() {
   }, [darkMode])
 
   return (
-    <div className="min-h-screen bg-[#f5f4f2] text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100">
-      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-[#f5f4f2]/95 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-950/95">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100">
+      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-[#F8FAFC]/95 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-950/95">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between gap-4">
             <div className="flex items-center gap-6">
               <NavLink to="/" className="flex items-center gap-3">
-                <div className="h-8 w-8 rounded-sm bg-slate-900 dark:bg-slate-100" />
+                <img
+                  src="https://cdn.nba.com/logos/leagues/logo-nba.svg"
+                  alt="NBA logo"
+                  className="h-8 w-8 object-contain"
+                />
                 <span className="text-base font-semibold tracking-tight text-slate-900 dark:text-white">NBA Analytics</span>
               </NavLink>
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Search, Plus } from 'lucide-react'
+import { useSearchParams } from 'react-router-dom'
 import { fetchJson, postJson } from '../api/client'
 import LoadingSpinner from '../components/LoadingSpinner'
 
@@ -9,7 +10,8 @@ const normalizeName = (value) =>
     .replace(/[^a-z0-9]+/g, '')
 
 export default function PlayerSearch() {
-  const [query, setQuery] = useState('')
+  const [searchParams] = useSearchParams()
+  const [query, setQuery] = useState(searchParams.get('q') || '')
   const [localResults, setLocalResults] = useState([])
   const [liveResults, setLiveResults] = useState([])
   const [player, setPlayer] = useState(null)
@@ -20,6 +22,13 @@ export default function PlayerSearch() {
   const [roster, setRoster] = useState({ items: [], page: 1, pages: 1, total: 0 })
   const [page, setPage] = useState(1)
   const [team, setTeam] = useState('')
+
+  useEffect(() => {
+    const paramQuery = searchParams.get('q') || ''
+    if (paramQuery && paramQuery !== query) {
+      setQuery(paramQuery)
+    }
+  }, [searchParams, query])
 
   useEffect(() => {
     const timer = setTimeout(async () => {
