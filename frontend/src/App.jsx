@@ -33,26 +33,26 @@ export default function App() {
   }, [darkMode])
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-cyan-50 text-slate-900 transition dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 dark:text-slate-100">
-      {/* Fixed Navigation Bar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-xl dark:border-slate-800/80 dark:bg-slate-950/90">
+    <div className="min-h-screen bg-[#f5f4f2] text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100">
+      <nav className="sticky top-0 z-50 border-b border-slate-200 bg-[#f5f4f2]/95 backdrop-blur-sm dark:border-slate-800 dark:bg-slate-950/95">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center gap-8">
-              <NavLink to="/" className="flex items-center gap-2">
-                <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-cyan-500 to-violet-600"></div>
-                <span className="text-lg font-bold text-slate-900 dark:text-white">NBA Analytics</span>
+          <div className="flex h-16 items-center justify-between gap-4">
+            <div className="flex items-center gap-6">
+              <NavLink to="/" className="flex items-center gap-3">
+                <div className="h-8 w-8 rounded-sm bg-slate-900 dark:bg-slate-100" />
+                <span className="text-base font-semibold tracking-tight text-slate-900 dark:text-white">NBA Analytics</span>
               </NavLink>
-              <div className="hidden md:flex items-center gap-1">
+
+              <div className="hidden items-center gap-1 md:flex">
                 {navItems.map((item) => (
                   <NavLink
                     key={item.path}
                     to={item.path}
                     className={({ isActive }) =>
-                      `px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                      `rounded-sm border px-3 py-2 text-sm font-medium transition-colors ${
                         isActive
-                          ? 'bg-gradient-to-r from-cyan-500 to-violet-500 text-white shadow-md'
-                          : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white'
+                          ? 'border-slate-900 bg-slate-900 text-white dark:border-slate-100 dark:bg-slate-100 dark:text-slate-950'
+                          : 'border-transparent text-slate-600 hover:border-slate-200 hover:bg-white dark:text-slate-400 dark:hover:border-slate-700 dark:hover:bg-slate-900'
                       }`
                     }
                   >
@@ -61,9 +61,10 @@ export default function App() {
                 ))}
               </div>
             </div>
+
             <button
               onClick={() => setDarkMode((value) => !value)}
-              className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 shadow-sm transition hover:border-cyan-400 hover:text-cyan-600 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-cyan-500"
+              className="inline-flex items-center gap-2 rounded-sm border border-slate-300 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-slate-400 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-slate-600"
             >
               {darkMode ? <Sun size={18} /> : <Moon size={18} />}
               <span className="hidden sm:inline">{darkMode ? 'Light' : 'Dark'}</span>
@@ -72,7 +73,7 @@ export default function App() {
         </div>
       </nav>
 
-      <div className="mx-auto max-w-7xl px-4 pt-24 pb-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-12 pt-8 sm:px-6 lg:px-8">
         <main className="space-y-8">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -87,7 +88,7 @@ export default function App() {
           </Routes>
         </main>
 
-        <footer className="mt-16 rounded-2xl border border-slate-200 bg-white px-6 py-8 text-sm text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-400">
+        <footer className="mt-16 border border-slate-200 bg-white px-6 py-8 text-sm text-slate-600 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-400">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <p>NBA Analytics Dashboard • Built with React, Tailwind CSS, and FastAPI.</p>
             <div className="flex flex-wrap gap-6">

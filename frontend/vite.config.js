@@ -48,6 +48,10 @@ export default defineConfig({
         target: API_URL,
         changeOrigin: true,
       },
+      '/nfl': {
+        target: API_URL,
+        changeOrigin: true,
+      },
       '/compare': {
         target: API_URL,
         changeOrigin: true,
