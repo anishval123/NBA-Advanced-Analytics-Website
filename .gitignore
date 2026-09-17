@@ -28,3 +28,7 @@ output.txt
 
 # misc
 .DS_Store
+
+# Derived NFLverse downloads and trained model artifacts (recreate via CLI)
+backend/nfl_predictor/data/
+backend/nfl_predictor/artifacts/

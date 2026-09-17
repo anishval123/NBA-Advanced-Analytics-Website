@@ -22,6 +22,7 @@ from utils.balldontlie import get_league_stats, get_player_stats
 from utils.basketball_reference import get_current_rosters, get_current_season_players
 from utils.merge import build_player_payload, build_ranked_payload, sanitize_row
 from config.recognition import EXCLUDED_PLAYERS, RECOGNITION_VALUES
+from nfl_predictor.prediction import read_saved_predictions
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("nba_api")
@@ -341,6 +342,12 @@ def _fetch_live_player_data_cached(name: str) -> Dict[str, Any]:
 @app.get("/")
 def root():
     return {"message": "NBA analytics dashboard API is running"}
+
+
+@app.get("/nfl/predictions")
+def nfl_predictions():
+    """Serve predictions generated offline; this endpoint never trains a model."""
+    return read_saved_predictions()
 
 
 @app.get("/players")
