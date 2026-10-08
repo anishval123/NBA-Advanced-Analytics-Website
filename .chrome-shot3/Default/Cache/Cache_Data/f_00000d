@@ -1,0 +1,335 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/src/pages/Methodology.jsx");import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=4404e1f7"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== "undefined" && self instanceof WorkerGlobalScope;
+let prevRefreshReg;
+let prevRefreshSig;
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+  prevRefreshReg = window.$RefreshReg$;
+  prevRefreshSig = window.$RefreshSig$;
+  window.$RefreshReg$ = RefreshRuntime.getRefreshReg("C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx");
+  window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+}
+var _s = $RefreshSig$();
+import __vite__cjsImport3_react from "/node_modules/.vite/deps/react.js?v=4404e1f7"; const useEffect = __vite__cjsImport3_react["useEffect"]; const useState = __vite__cjsImport3_react["useState"];
+import { Link } from "/node_modules/.vite/deps/react-router-dom.js?v=4404e1f7";
+import { fetchJson } from "/src/api/client.js";
+import Card from "/src/components/Card.jsx";
+import LoadingSpinner from "/src/components/LoadingSpinner.jsx";
+import PageHeader from "/src/components/PageHeader.jsx";
+import { fmtVal, METRICS, MINIMUM_MINUTES_RULE } from "/src/utils/metrics.js?t=1791331755992";
+const ASSUMPTIONS = [
+  "Team context and usage share are treated as important but noisy features.",
+  "Box-score stats can understate impact unless paired with efficiency and defensive context.",
+  "Player value changes as role, minutes, and team structure shift over the season."
+];
+const LIMITATIONS = [
+  "Advanced metrics can be sensitive to sample size and partial-season noise.",
+  "Defensive value is harder to observe than offense in many public feeds.",
+  "Rankings should be interpreted as directional, not absolute truth."
+];
+export default function Methodology() {
+  _s();
+  const [leaders, setLeaders] = useState({});
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    let mounted = true;
+    Promise.all(
+      METRICS.map(
+        (metric) => fetchJson(metric.endpoint).then((data) => [metric.slug, Array.isArray(data) ? data[0] : null]).catch(() => [metric.slug, null])
+      )
+    ).then((entries) => {
+      if (mounted) setLeaders(Object.fromEntries(entries));
+    }).finally(() => {
+      if (mounted) setLoaded(true);
+    });
+    return () => {
+      mounted = false;
+    };
+  }, []);
+  return /* @__PURE__ */ jsxDEV("div", { className: "stack", children: [
+    /* @__PURE__ */ jsxDEV(
+      PageHeader,
+      {
+        label: "Methodology",
+        title: "How the five scores are built",
+        description: "All five scores are 0–100 league percentiles. Each section below is written directly from the code that computes it."
+      },
+      void 0,
+      false,
+      {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 66,
+        columnNumber: 7
+      },
+      this
+    ),
+    !loaded && /* @__PURE__ */ jsxDEV(LoadingSpinner, { label: "Loading method details…" }, void 0, false, {
+      fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+      lineNumber: 72,
+      columnNumber: 19
+    }, this),
+    METRICS.map((metric) => {
+      const leader = leaders[metric.slug];
+      return /* @__PURE__ */ jsxDEV("details", { className: "method", open: true, children: [
+        /* @__PURE__ */ jsxDEV("summary", { children: [
+          /* @__PURE__ */ jsxDEV("h3", { className: "card-title", children: metric.title }, void 0, false, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 79,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { className: "method-summary-icon", children: "+" }, void 0, false, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 80,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+          lineNumber: 78,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "method-body", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "What it measures" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 84,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: metric.definition }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 85,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 83,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "Formula" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 88,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("pre", { className: "code-line", children: metric.formula }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 89,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 87,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "Weights" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 92,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: metric.weights }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 93,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 91,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "Inputs" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 96,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: metric.inputs }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 97,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 95,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "Minimum-minutes rule" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 100,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: MINIMUM_MINUTES_RULE }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 101,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 99,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "Example player" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 104,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: leader ? `${leader.player} is the current leader on this metric (${fmtVal(leader.score)}).` : loaded ? "No leaderboard data available right now." : "Loading…" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 105,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 103,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "Limitations" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 114,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: metric.limitation }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 115,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 113,
+            columnNumber: 15
+          }, this),
+          metric.slug === "underrated" && /* @__PURE__ */ jsxDEV("div", { className: "method-block", children: [
+            /* @__PURE__ */ jsxDEV("h4", { children: "Honest flag" }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 119,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("p", { children: "The recognition penalty exists, but it is curated for a small set of high-profile players (All-Star selections, awards, jersey sales, career reputation) plus points per game. There is no direct measure of media mentions or fan sentiment, so the penalty is coarse for everyone outside that shortlist." }, void 0, false, {
+              fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+              lineNumber: 120,
+              columnNumber: 19
+            }, this)
+          ] }, void 0, true, {
+            fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+            lineNumber: 118,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+          lineNumber: 82,
+          columnNumber: 13
+        }, this)
+      ] }, metric.slug, true, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 77,
+        columnNumber: 11
+      }, this);
+    }),
+    /* @__PURE__ */ jsxDEV("div", { className: "grid-3", children: [
+      /* @__PURE__ */ jsxDEV(Card, { title: "Assumptions", children: /* @__PURE__ */ jsxDEV("ul", { children: ASSUMPTIONS.map(
+        (item) => /* @__PURE__ */ jsxDEV("li", { children: item }, item, false, {
+          fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+          lineNumber: 137,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 135,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 134,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Card, { title: "Limitations", id: "limitations", children: /* @__PURE__ */ jsxDEV("ul", { children: LIMITATIONS.map(
+        (item) => /* @__PURE__ */ jsxDEV("li", { children: item }, item, false, {
+          fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+          lineNumber: 144,
+          columnNumber: 13
+        }, this)
+      ) }, void 0, false, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 142,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 141,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(Card, { title: "Open questions", children: /* @__PURE__ */ jsxDEV("p", { children: [
+        "Everything shown is computed from the data and code in this repository. Paragraph-length prose describing why these metrics matter is",
+        /* @__PURE__ */ jsxDEV("code", { children: "[TODO: write in my own words]" }, void 0, false, {
+          fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+          lineNumber: 152,
+          columnNumber: 13
+        }, this),
+        "."
+      ] }, void 0, true, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 149,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 148,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+      lineNumber: 133,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(Card, { title: "More", children: /* @__PURE__ */ jsxDEV("p", { children: [
+      /* @__PURE__ */ jsxDEV(Link, { to: "/methodology/data-sources", children: "Data sources" }, void 0, false, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 159,
+        columnNumber: 11
+      }, this),
+      " ·",
+      " ",
+      /* @__PURE__ */ jsxDEV(Link, { to: "/methodology/changelog", children: "Changelog" }, void 0, false, {
+        fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+        lineNumber: 160,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+      lineNumber: 158,
+      columnNumber: 9
+    }, this) }, void 0, false, {
+      fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+      lineNumber: 157,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx",
+    lineNumber: 65,
+    columnNumber: 5
+  }, this);
+}
+_s(Methodology, "5UqU3Ql6zzrwuXdrm10SOeos86c=");
+_c = Methodology;
+var _c;
+$RefreshReg$(_c, "Methodology");
+if (import.meta.hot && !inWebWorker) {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+if (import.meta.hot && !inWebWorker) {
+  RefreshRuntime.__hmr_import(import.meta.url).then((currentExports) => {
+    RefreshRuntime.registerExportsForReactRefresh("C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("C:/Users/srini/video-editing-agent/frontend/src/pages/Methodology.jsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+
+//# sourceMappingURL=data:application/json;base64,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O0FBQUEsV0FINUM7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUlBLEtBTEY7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQU1BO0FBQUEsU0FyQkY7QUFBQTtBQUFBO0FBQUE7QUFBQSxXQXNCQTtBQUFBLElBRUEsdUJBQUMsUUFBSyxPQUFNLFFBQ1YsaUNBQUMsT0FDQztBQUFBLDZCQUFDLFFBQUssSUFBRyw2QkFBNEIsNEJBQXJDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBaUQ7QUFBQSxNQUFPO0FBQUEsTUFBRztBQUFBLE1BQzNELHVCQUFDLFFBQUssSUFBRywwQkFBeUIseUJBQWxDO0FBQUE7QUFBQTtBQUFBO0FBQUEsYUFBMkM7QUFBQSxTQUY3QztBQUFBO0FBQUE7QUFBQTtBQUFBLFdBR0EsS0FKRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBS0E7QUFBQSxPQWpHRjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBa0dBO0FBRUo7QUFBQzlCLEdBN0h1QkQsYUFBVztBQUFBLEtBQVhBO0FBQVcsSUFBQWdDO0FBQUEsYUFBQUEsSUFBQSIsIm5hbWVzIjpbInVzZUVmZmVjdCIsInVzZVN0YXRlIiwiTGluayIsImZldGNoSnNvbiIsIkNhcmQiLCJMb2FkaW5nU3Bpbm5lciIsIlBhZ2VIZWFkZXIiLCJmbXRWYWwiLCJNRVRSSUNTIiwiTUlOSU1VTV9NSU5VVEVTX1JVTEUiLCJBU1NVTVBUSU9OUyIsIkxJTUlUQVRJT05TIiwiTWV0aG9kb2xvZ3kiLCJfcyIsImxlYWRlcnMiLCJzZXRMZWFkZXJzIiwibG9hZGVkIiwic2V0TG9hZGVkIiwibW91bnRlZCIsIlByb21pc2UiLCJhbGwiLCJtYXAiLCJtZXRyaWMiLCJlbmRwb2ludCIsInRoZW4iLCJkYXRhIiwic2x1ZyIsIkFycmF5IiwiaXNBcnJheSIsImNhdGNoIiwiZW50cmllcyIsIk9iamVjdCIsImZyb21FbnRyaWVzIiwiZmluYWxseSIsImxlYWRlciIsInRpdGxlIiwiZGVmaW5pdGlvbiIsImZvcm11bGEiLCJ3ZWlnaHRzIiwiaW5wdXRzIiwicGxheWVyIiwic2NvcmUiLCJsaW1pdGF0aW9uIiwiaXRlbSIsIl9jIl0sImlnbm9yZUxpc3QiOltdLCJzb3VyY2VzIjpbIk1ldGhvZG9sb2d5LmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnXHJcbmltcG9ydCB7IExpbmsgfSBmcm9tICdyZWFjdC1yb3V0ZXItZG9tJ1xyXG5pbXBvcnQgeyBmZXRjaEpzb24gfSBmcm9tICcuLi9hcGkvY2xpZW50J1xyXG5pbXBvcnQgQ2FyZCBmcm9tICcuLi9jb21wb25lbnRzL0NhcmQnXHJcbmltcG9ydCBMb2FkaW5nU3Bpbm5lciBmcm9tICcuLi9jb21wb25lbnRzL0xvYWRpbmdTcGlubmVyJ1xyXG5pbXBvcnQgUGFnZUhlYWRlciBmcm9tICcuLi9jb21wb25lbnRzL1BhZ2VIZWFkZXInXHJcbmltcG9ydCB7IGZtdFZhbCwgTUVUUklDUywgTUlOSU1VTV9NSU5VVEVTX1JVTEUgfSBmcm9tICcuLi91dGlscy9tZXRyaWNzJ1xyXG5cclxuY29uc3QgQVNTVU1QVElPTlMgPSBbXHJcbiAgJ1RlYW0gY29udGV4dCBhbmQgdXNhZ2Ugc2hhcmUgYXJlIHRyZWF0ZWQgYXMgaW1wb3J0YW50IGJ1dCBub2lzeSBmZWF0dXJlcy4nLFxyXG4gICdCb3gtc2NvcmUgc3RhdHMgY2FuIHVuZGVyc3RhdGUgaW1wYWN0IHVubGVzcyBwYWlyZWQgd2l0aCBlZmZpY2llbmN5IGFuZCBkZWZlbnNpdmUgY29udGV4dC4nLFxyXG4gICdQbGF5ZXIgdmFsdWUgY2hhbmdlcyBhcyByb2xlLCBtaW51dGVzLCBhbmQgdGVhbSBzdHJ1Y3R1cmUgc2hpZnQgb3ZlciB0aGUgc2Vhc29uLicsXHJcbl1cclxuXHJcbmNvbnN0IExJTUlUQVRJT05TID0gW1xyXG4gICdBZHZhbmNlZCBtZXRyaWNzIGNhbiBiZSBzZW5zaXRpdmUgdG8gc2FtcGxlIHNpemUgYW5kIHBhcnRpYWwtc2Vhc29uIG5vaXNlLicsXHJcbiAgJ0RlZmVuc2l2ZSB2YWx1ZSBpcyBoYXJkZXIgdG8gb2JzZXJ2ZSB0aGFuIG9mZmVuc2UgaW4gbWFueSBwdWJsaWMgZmVlZHMuJyxcclxuICAnUmFua2luZ3Mgc2hvdWxkIGJlIGludGVycHJldGVkIGFzIGRpcmVjdGlvbmFsLCBub3QgYWJzb2x1dGUgdHJ1dGguJyxcclxuXVxyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gTWV0aG9kb2xvZ3koKSB7XHJcbiAgY29uc3QgW2xlYWRlcnMsIHNldExlYWRlcnNdID0gdXNlU3RhdGUoe30pXHJcbiAgY29uc3QgW2xvYWRlZCwgc2V0TG9hZGVkXSA9IHVzZVN0YXRlKGZhbHNlKVxyXG5cclxuICB1c2VFZmZlY3QoKCkgPT4ge1xyXG4gICAgbGV0IG1vdW50ZWQgPSB0cnVlXHJcbiAgICBQcm9taXNlLmFsbChcclxuICAgICAgTUVUUklDUy5tYXAoKG1ldHJpYykgPT5cclxuICAgICAgICBmZXRjaEpzb24obWV0cmljLmVuZHBvaW50KVxyXG4gICAgICAgICAgLnRoZW4oKGRhdGEpID0+IFttZXRyaWMuc2x1ZywgQXJyYXkuaXNBcnJheShkYXRhKSA/IGRhdGFbMF0gOiBudWxsXSlcclxuICAgICAgICAgIC5jYXRjaCgoKSA9PiBbbWV0cmljLnNsdWcsIG51bGxdKVxyXG4gICAgICApXHJcbiAgICApXHJcbiAgICAgIC50aGVuKChlbnRyaWVzKSA9PiB7XHJcbiAgICAgICAgaWYgKG1vdW50ZWQpIHNldExlYWRlcnMoT2JqZWN0LmZyb21FbnRyaWVzKGVudHJpZXMpKVxyXG4gICAgICB9KVxyXG4gICAgICAuZmluYWxseSgoKSA9PiB7XHJcbiAgICAgICAgaWYgKG1vdW50ZWQpIHNldExvYWRlZCh0cnVlKVxyXG4gICAgICB9KVxyXG4gICAgcmV0dXJuICgpID0+IHtcclxuICAgICAgbW91bnRlZCA9IGZhbHNlXHJcbiAgICB9XHJcbiAgfSwgW10pXHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8ZGl2IGNsYXNzTmFtZT1cInN0YWNrXCI+XHJcbiAgICAgIDxQYWdlSGVhZGVyXHJcbiAgICAgICAgbGFiZWw9XCJNZXRob2RvbG9neVwiXHJcbiAgICAgICAgdGl0bGU9XCJIb3cgdGhlIGZpdmUgc2NvcmVzIGFyZSBidWlsdFwiXHJcbiAgICAgICAgZGVzY3JpcHRpb249XCJBbGwgZml2ZSBzY29yZXMgYXJlIDDigJMxMDAgbGVhZ3VlIHBlcmNlbnRpbGVzLiBFYWNoIHNlY3Rpb24gYmVsb3cgaXMgd3JpdHRlbiBkaXJlY3RseSBmcm9tIHRoZSBjb2RlIHRoYXQgY29tcHV0ZXMgaXQuXCJcclxuICAgICAgLz5cclxuXHJcbiAgICAgIHshbG9hZGVkICYmIDxMb2FkaW5nU3Bpbm5lciBsYWJlbD1cIkxvYWRpbmcgbWV0aG9kIGRldGFpbHPigKZcIiAvPn1cclxuXHJcbiAgICAgIHtNRVRSSUNTLm1hcCgobWV0cmljKSA9PiB7XHJcbiAgICAgICAgY29uc3QgbGVhZGVyID0gbGVhZGVyc1ttZXRyaWMuc2x1Z11cclxuICAgICAgICByZXR1cm4gKFxyXG4gICAgICAgICAgPGRldGFpbHMgY2xhc3NOYW1lPVwibWV0aG9kXCIgb3BlbiBrZXk9e21ldHJpYy5zbHVnfT5cclxuICAgICAgICAgICAgPHN1bW1hcnk+XHJcbiAgICAgICAgICAgICAgPGgzIGNsYXNzTmFtZT1cImNhcmQtdGl0bGVcIj57bWV0cmljLnRpdGxlfTwvaDM+XHJcbiAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibWV0aG9kLXN1bW1hcnktaWNvblwiPis8L3NwYW4+XHJcbiAgICAgICAgICAgIDwvc3VtbWFyeT5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtZXRob2QtYm9keVwiPlxyXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWV0aG9kLWJsb2NrXCI+XHJcbiAgICAgICAgICAgICAgICA8aDQ+V2hhdCBpdCBtZWFzdXJlczwvaDQ+XHJcbiAgICAgICAgICAgICAgICA8cD57bWV0cmljLmRlZmluaXRpb259PC9wPlxyXG4gICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWV0aG9kLWJsb2NrXCI+XHJcbiAgICAgICAgICAgICAgICA8aDQ+Rm9ybXVsYTwvaDQ+XHJcbiAgICAgICAgICAgICAgICA8cHJlIGNsYXNzTmFtZT1cImNvZGUtbGluZVwiPnttZXRyaWMuZm9ybXVsYX08L3ByZT5cclxuICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1ldGhvZC1ibG9ja1wiPlxyXG4gICAgICAgICAgICAgICAgPGg0PldlaWdodHM8L2g0PlxyXG4gICAgICAgICAgICAgICAgPHA+e21ldHJpYy53ZWlnaHRzfTwvcD5cclxuICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1ldGhvZC1ibG9ja1wiPlxyXG4gICAgICAgICAgICAgICAgPGg0PklucHV0czwvaDQ+XHJcbiAgICAgICAgICAgICAgICA8cD57bWV0cmljLmlucHV0c308L3A+XHJcbiAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtZXRob2QtYmxvY2tcIj5cclxuICAgICAgICAgICAgICAgIDxoND5NaW5pbXVtLW1pbnV0ZXMgcnVsZTwvaDQ+XHJcbiAgICAgICAgICAgICAgICA8cD57TUlOSU1VTV9NSU5VVEVTX1JVTEV9PC9wPlxyXG4gICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWV0aG9kLWJsb2NrXCI+XHJcbiAgICAgICAgICAgICAgICA8aDQ+RXhhbXBsZSBwbGF5ZXI8L2g0PlxyXG4gICAgICAgICAgICAgICAgPHA+XHJcbiAgICAgICAgICAgICAgICAgIHtsZWFkZXJcclxuICAgICAgICAgICAgICAgICAgICA/IGAke2xlYWRlci5wbGF5ZXJ9IGlzIHRoZSBjdXJyZW50IGxlYWRlciBvbiB0aGlzIG1ldHJpYyAoJHtmbXRWYWwobGVhZGVyLnNjb3JlKX0pLmBcclxuICAgICAgICAgICAgICAgICAgICA6IGxvYWRlZFxyXG4gICAgICAgICAgICAgICAgICAgICAgPyAnTm8gbGVhZGVyYm9hcmQgZGF0YSBhdmFpbGFibGUgcmlnaHQgbm93LidcclxuICAgICAgICAgICAgICAgICAgICAgIDogJ0xvYWRpbmfigKYnfVxyXG4gICAgICAgICAgICAgICAgPC9wPlxyXG4gICAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibWV0aG9kLWJsb2NrXCI+XHJcbiAgICAgICAgICAgICAgICA8aDQ+TGltaXRhdGlvbnM8L2g0PlxyXG4gICAgICAgICAgICAgICAgPHA+e21ldHJpYy5saW1pdGF0aW9ufTwvcD5cclxuICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICB7bWV0cmljLnNsdWcgPT09ICd1bmRlcnJhdGVkJyAmJiAoXHJcbiAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cIm1ldGhvZC1ibG9ja1wiPlxyXG4gICAgICAgICAgICAgICAgICA8aDQ+SG9uZXN0IGZsYWc8L2g0PlxyXG4gICAgICAgICAgICAgICAgICA8cD5cclxuICAgICAgICAgICAgICAgICAgICBUaGUgcmVjb2duaXRpb24gcGVuYWx0eSBleGlzdHMsIGJ1dCBpdCBpcyBjdXJhdGVkIGZvciBhIHNtYWxsIHNldCBvZiBoaWdoLXByb2ZpbGVcclxuICAgICAgICAgICAgICAgICAgICBwbGF5ZXJzIChBbGwtU3RhciBzZWxlY3Rpb25zLCBhd2FyZHMsIGplcnNleSBzYWxlcywgY2FyZWVyIHJlcHV0YXRpb24pIHBsdXMgcG9pbnRzXHJcbiAgICAgICAgICAgICAgICAgICAgcGVyIGdhbWUuIFRoZXJlIGlzIG5vIGRpcmVjdCBtZWFzdXJlIG9mIG1lZGlhIG1lbnRpb25zIG9yIGZhbiBzZW50aW1lbnQsIHNvIHRoZVxyXG4gICAgICAgICAgICAgICAgICAgIHBlbmFsdHkgaXMgY29hcnNlIGZvciBldmVyeW9uZSBvdXRzaWRlIHRoYXQgc2hvcnRsaXN0LlxyXG4gICAgICAgICAgICAgICAgICA8L3A+XHJcbiAgICAgICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgICAgICApfVxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDwvZGV0YWlscz5cclxuICAgICAgICApXHJcbiAgICAgIH0pfVxyXG5cclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJncmlkLTNcIj5cclxuICAgICAgICA8Q2FyZCB0aXRsZT1cIkFzc3VtcHRpb25zXCI+XHJcbiAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgIHtBU1NVTVBUSU9OUy5tYXAoKGl0ZW0pID0+IChcclxuICAgICAgICAgICAgICA8bGkga2V5PXtpdGVtfT57aXRlbX08L2xpPlxyXG4gICAgICAgICAgICApKX1cclxuICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgPC9DYXJkPlxyXG4gICAgICAgIDxDYXJkIHRpdGxlPVwiTGltaXRhdGlvbnNcIiBpZD1cImxpbWl0YXRpb25zXCI+XHJcbiAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgIHtMSU1JVEFUSU9OUy5tYXAoKGl0ZW0pID0+IChcclxuICAgICAgICAgICAgICA8bGkga2V5PXtpdGVtfT57aXRlbX08L2xpPlxyXG4gICAgICAgICAgICApKX1cclxuICAgICAgICAgIDwvdWw+XHJcbiAgICAgICAgPC9DYXJkPlxyXG4gICAgICAgIDxDYXJkIHRpdGxlPVwiT3BlbiBxdWVzdGlvbnNcIj5cclxuICAgICAgICAgIDxwPlxyXG4gICAgICAgICAgICBFdmVyeXRoaW5nIHNob3duIGlzIGNvbXB1dGVkIGZyb20gdGhlIGRhdGEgYW5kIGNvZGUgaW4gdGhpcyByZXBvc2l0b3J5LiBQYXJhZ3JhcGgtbGVuZ3RoXHJcbiAgICAgICAgICAgIHByb3NlIGRlc2NyaWJpbmcgd2h5IHRoZXNlIG1ldHJpY3MgbWF0dGVyIGlzXHJcbiAgICAgICAgICAgIDxjb2RlPltUT0RPOiB3cml0ZSBpbiBteSBvd24gd29yZHNdPC9jb2RlPi5cclxuICAgICAgICAgIDwvcD5cclxuICAgICAgICA8L0NhcmQ+XHJcbiAgICAgIDwvZGl2PlxyXG5cclxuICAgICAgPENhcmQgdGl0bGU9XCJNb3JlXCI+XHJcbiAgICAgICAgPHA+XHJcbiAgICAgICAgICA8TGluayB0bz1cIi9tZXRob2RvbG9neS9kYXRhLXNvdXJjZXNcIj5EYXRhIHNvdXJjZXM8L0xpbms+IMK3eycgJ31cclxuICAgICAgICAgIDxMaW5rIHRvPVwiL21ldGhvZG9sb2d5L2NoYW5nZWxvZ1wiPkNoYW5nZWxvZzwvTGluaz5cclxuICAgICAgICA8L3A+XHJcbiAgICAgIDwvQ2FyZD5cclxuICAgIDwvZGl2PlxyXG4gIClcclxufSJdLCJmaWxlIjoiQzovVXNlcnMvc3JpbmkvdmlkZW8tZWRpdGluZy1hZ2VudC9mcm9udGVuZC9zcmMvcGFnZXMvTWV0aG9kb2xvZ3kuanN4In0=

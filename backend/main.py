@@ -23,6 +23,7 @@ from utils.basketball_reference import get_current_rosters, get_current_season_p
 from utils.merge import build_player_payload, build_ranked_payload, sanitize_row
 from config.recognition import EXCLUDED_PLAYERS, RECOGNITION_VALUES
 from nfl_predictor.prediction import read_saved_predictions
+from nfl_predictor.live_results import live_results_payload
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("nba_api")
@@ -350,6 +351,16 @@ def nfl_predictions():
     return read_saved_predictions()
 
 
+@app.get("/nfl/games")
+def nfl_games(season: Optional[int] = Query(None, ge=1999, le=2100)):
+    """Live NFL status/scores plus records calculated from provider-confirmed finals."""
+    try:
+        return live_results_payload(season)
+    except Exception as exc:
+        logger.exception("NFL scoreboard refresh failed")
+        raise HTTPException(status_code=502, detail="NFL scoreboard provider is unavailable") from exc
+
+
 @app.get("/players")
 def list_players(limit: int = 200, offset: int = 0, query: str = ""):
     players, _ = _load_data()
@@ -360,6 +371,8 @@ def list_players(limit: int = 200, offset: int = 0, query: str = ""):
             player
             for player in players
             if query_key in normalize_name(player.get("player", ""))
+            or query_key in normalize_name(str(player.get("team", "")))
+            or query_key in str(player.get("team_abbreviation", "")).lower()
         ]
     return filtered_players[offset : offset + limit]
 
@@ -378,7 +391,13 @@ def all_players(
     players = list(modeled)
     if query:
         key = normalize_name(query)
-        players = [p for p in players if key in normalize_name(p.get("player", ""))]
+        players = [
+            p
+            for p in players
+            if key in normalize_name(p.get("player", ""))
+            or key in normalize_name(str(p.get("team", "")))
+            or key in str(p.get("team_abbreviation", "")).lower()
+        ]
     if team:
         players = [p for p in players if team.lower() in str(p.get("team", "")).lower()]
     if position:
@@ -404,7 +423,9 @@ def search_players(query: str = "", limit: int = 10):
     matches = []
     for player in players:
         name_key = normalize_name(player.get("player", ""))
-        if query_key in name_key:
+        team_key = normalize_name(str(player.get("team", "")))
+        abbrev_key = str(player.get("team_abbreviation", "")).lower()
+        if query_key in name_key or query_key in team_key or query_key in abbrev_key:
             matches.append(player)
     existing = {normalize_name(p.get("player", "")) for p in matches}
     for player in get_live_player_directory():

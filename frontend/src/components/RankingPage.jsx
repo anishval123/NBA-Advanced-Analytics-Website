@@ -1,67 +1,88 @@
 import { useEffect, useState } from 'react'
-import { Activity } from 'lucide-react'
 import { fetchJson } from '../api/client'
-import { RankingBarChart } from '../charts/MetricCharts'
+import PageHeader from './PageHeader'
+import Card from './Card'
+import DataTable from './DataTable'
+import BarChart from './BarChart'
 import LoadingSpinner from './LoadingSpinner'
-import MetricTable from './MetricTable'
-import FormulaSection from './FormulaSection'
+import { fmtVal, getMetric, MINIMUM_MINUTES_RULE } from '../utils/metrics'
 
-export default function RankingPage({ title, endpoint, columns, description, metric }) {
+function buildColumns(meta) {
+  if (meta.columns) return meta.columns
+  // Metrics without an exposed breakdown (role compression) show context stats instead.
+  return [
+    { key: 'player', label: 'Player', href: (row) => `/player/${encodeURIComponent(row.player)}` },
+    { key: 'team', label: 'Team', format: (row) => row.team_abbreviation || row.team || '-', isGet: true },
+    { key: 'score', label: 'Score', align: 'right', format: (value) => fmtVal(value) },
+    ...(meta.contextColumns || []),
+    { key: 'minutes', label: 'Min', align: 'right', format: (value) => fmtVal(value) },
+    { key: 'games', label: 'Games', align: 'right', format: (value) => fmtVal(value, 0) },
+  ]
+}
+
+export default function RankingPage({ metric }) {
+  const meta = getMetric(metric)
   const [rows, setRows] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
   useEffect(() => {
+    let mounted = true
     async function load() {
       try {
         setLoading(true)
-        const data = await fetchJson(endpoint)
-        setRows(Array.isArray(data) ? data : [])
+        setError('')
+        const data = await fetchJson(meta.endpoint)
+        if (mounted) setRows(Array.isArray(data) ? data : [])
       } catch (err) {
-        setError(err.message)
+        if (mounted) setError(err.message || 'Unknown error')
       } finally {
-        setLoading(false)
+        if (mounted) setLoading(false)
       }
     }
-
     load()
-  }, [endpoint])
+    return () => {
+      mounted = false
+    }
+  }, [meta.endpoint])
+
+  const columns = buildColumns(meta)
+  const chartGroups = rows.slice(0, 8).map((row) => ({
+    label: row.player,
+    bars: [{ value: row.scores?.[meta.key] || row.score || 0, tone: 'accent' }],
+  }))
 
   return (
-    <div className="space-y-6">
-      <section className="border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500">Performance rankings</p>
-            <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 dark:text-white">{title}</h2>
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">{description}</p>
-          </div>
-          <div className="inline-flex items-center gap-2 border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-medium text-slate-700 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300">
-            <Activity size={16} />
-            Top {rows.length} players
-          </div>
-        </div>
-      </section>
+    <div className="stack">
+      <PageHeader
+        label="Performance rankings"
+        title={`${meta.title} Rankings`}
+        description={meta.definition}
+      />
 
-      {loading && <LoadingSpinner />}
-      {error && <p className="border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700 dark:border-rose-900 dark:bg-rose-950/20 dark:text-rose-300">{error}</p>}
+      {loading && <LoadingSpinner label={`Loading ${meta.title.toLowerCase()} rankings…`} />}
+      {error && (
+        <div className="error-box">Could not load {meta.title.toLowerCase()} rankings: {error}</div>
+      )}
 
       {!loading && !error && (
-        <div className="grid gap-6 xl:grid-cols-[1.6fr_1fr]">
-          <section className="border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900">
-            <div className="border-b border-slate-200 px-6 py-4 dark:border-slate-800">
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Rankings</h3>
-            </div>
-            <MetricTable rows={rows} columns={columns} />
-          </section>
+        <>
+          <Card
+            title={`Top ${rows.length} players`}
+            description="Click a column header to sort. Numbers are right-aligned; “-” means the value is missing."
+          >
+            <DataTable columns={columns} rows={rows} initialSort="score" />
+          </Card>
 
-          <section className="border border-slate-200 bg-slate-50 p-6 dark:border-slate-800 dark:bg-slate-900">
-            <h3 className="mb-4 text-lg font-semibold text-slate-900 dark:text-white">Metric snapshot</h3>
-            <RankingBarChart rows={rows} />
-          </section>
-        </div>
+          <Card title="Score snapshot" description="Horizontal bars for the top ranked players; every bar is labeled directly.">
+            <BarChart groups={chartGroups} axisX="Score (0–100)" axisY="Player" />
+          </Card>
+
+          <Card title="Who qualifies?" description={MINIMUM_MINUTES_RULE}>
+            <p>Metric weights: {meta.weights}</p>
+          </Card>
+        </>
       )}
-      <FormulaSection metric={metric} />
     </div>
   )
 }

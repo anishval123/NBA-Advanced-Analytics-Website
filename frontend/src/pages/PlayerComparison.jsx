@@ -1,140 +1,190 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
+import { useSearchParams } from 'react-router-dom'
 import { fetchJson } from '../api/client'
-import { PlayerRadarChart } from '../charts/MetricCharts'
+import BarChart from '../components/BarChart'
+import Button from '../components/Button'
+import Card from '../components/Card'
+import DataTable from '../components/DataTable'
 import LoadingSpinner from '../components/LoadingSpinner'
-import { formatScore } from '../utils/formatScore'
+import PageHeader from '../components/PageHeader'
+import { fmtVal, METRICS } from '../utils/metrics'
+
+function numberOrNull(value) {
+  if (value === null || value === undefined || value === '') return null
+  const number = Number(value)
+  return Number.isNaN(number) ? null : number
+}
+
+function diffCell(a, b) {
+  const av = numberOrNull(a)
+  const bv = numberOrNull(b)
+  if (av === null || bv === null) return null
+  return av - bv
+}
+
+function buildRows(player1, player2) {
+  const rows = []
+  for (const metric of METRICS) {
+    rows.push({
+      label: metric.title,
+      p1: fmtVal(player1?.scores?.[metric.key]),
+      p2: fmtVal(player2?.scores?.[metric.key]),
+      diff: diffCell(player1?.scores?.[metric.key], player2?.scores?.[metric.key]),
+    })
+    const breakdown1 = player1?.score_breakdowns?.[metric.key] || {}
+    const breakdown2 = player2?.score_breakdowns?.[metric.key] || {}
+    for (const key of metric.breakdownKeys) {
+      rows.push({
+        label: `${metric.title} · ${metric.breakdownLabels[key] || key}`,
+        p1: fmtVal(breakdown1[key]),
+        p2: fmtVal(breakdown2[key]),
+        diff: diffCell(breakdown1[key], breakdown2[key]),
+      })
+    }
+  }
+  return rows
+}
 
 export default function PlayerComparison() {
-  const [player1, setPlayer1] = useState('LeBron James')
-  const [player2, setPlayer2] = useState('Giannis Antetokounmpo')
+  const [searchParams] = useSearchParams()
+  const [player1, setPlayer1] = useState(searchParams.get('player1') || 'LeBron James')
+  const [player2, setPlayer2] = useState(searchParams.get('player2') || 'Giannis Antetokounmpo')
   const [result, setResult] = useState(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
+  useEffect(() => {
+    const p1 = searchParams.get('player1')
+    const p2 = searchParams.get('player2')
+    if (p1) setPlayer1(p1)
+    if (p2) setPlayer2(p2)
+  }, [searchParams])
+
   async function handleCompare() {
+    const left = player1.trim()
+    const right = player2.trim()
+    if (!left || !right) return
     try {
       setLoading(true)
       setError('')
-      const data = await fetchJson(`/compare?player1=${encodeURIComponent(player1)}&player2=${encodeURIComponent(player2)}`)
+      setResult(null)
+      const data = await fetchJson(`/compare?player1=${encodeURIComponent(left)}&player2=${encodeURIComponent(right)}`)
       setResult(data)
     } catch (err) {
-      setError(err.message)
-      setResult(null)
+      setError(err.message || 'Unknown error')
     } finally {
       setLoading(false)
     }
   }
 
-  return (
-    <div className="space-y-6">
-      <section className="border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-          <div>
-            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500">Player comparison</p>
-            <h2 className="mt-2 text-3xl font-semibold tracking-tight text-slate-900 dark:text-white">Compare two players side by side</h2>
-            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">Analyze impact metrics, role fit, and defensive disruption between any two NBA players.</p>
-          </div>
-        </div>
+  const diffColumns = [
+    { key: 'label', label: 'Metric' },
+    { key: 'p1', label: player1 || 'Player 1', align: 'right' },
+    { key: 'p2', label: player2 || 'Player 2', align: 'right' },
+    {
+      key: 'diff',
+      label: 'Difference',
+      align: 'right',
+      format: (value) => (value === null ? '-' : `${value > 0 ? '+' : ''}${value.toFixed(1)}`),
+    },
+  ]
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+  const chartGroups = METRICS.map((metric) => {
+    const score1 = numberOrNull(result?.player1?.scores?.[metric.key])
+    const score2 = numberOrNull(result?.player2?.scores?.[metric.key])
+    return {
+      label: metric.title,
+      bars: [
+        { value: score1 || 0, sublabel: result?.player1?.player || '', tone: 'accent' },
+        { value: score2 || 0, sublabel: result?.player2?.player || '', tone: 'teal' },
+      ],
+    }
+  })
+
+  return (
+    <div className="stack">
+      <PageHeader
+        label="Player comparison"
+        title="Compare two players side by side"
+        description="Enter two names and compare their five scores, every component, and the difference between them."
+      />
+
+      <Card title="Pick two players">
+        <form
+          className="toolbar"
+          onSubmit={(event) => {
+            event.preventDefault()
+            handleCompare()
+          }}
+        >
+          <label className="visually-hidden" htmlFor="player1">
+            Player 1
+          </label>
           <input
+            id="player1"
+            className="field"
             value={player1}
             onChange={(event) => setPlayer1(event.target.value)}
             placeholder="Player 1 name"
-            className="rounded-sm border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
+            aria-label="Player 1 name"
           />
+          <label className="visually-hidden" htmlFor="player2">
+            Player 2
+          </label>
           <input
+            id="player2"
+            className="field"
             value={player2}
             onChange={(event) => setPlayer2(event.target.value)}
             placeholder="Player 2 name"
-            className="rounded-sm border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition focus:border-slate-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100"
+            aria-label="Player 2 name"
           />
-        </div>
+          <Button type="submit" variant="primary">
+            Compare players
+            <ArrowRight size={16} />
+          </Button>
+        </form>
+      </Card>
 
-        <button
-          onClick={handleCompare}
-          className="mt-4 inline-flex items-center justify-center gap-2 border border-slate-900 bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-slate-700"
-        >
-          Compare players
-          <ArrowRight size={16} />
-        </button>
-      </section>
+      {loading && <LoadingSpinner label="Comparing players…" />}
+      {error && <div className="error-box">Comparison failed: {error}</div>}
 
-      {loading && <LoadingSpinner />}
-      {error && <p className="rounded-sm border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700 dark:border-rose-900 dark:bg-rose-950/20 dark:text-rose-300">{error}</p>}
+      {result && !loading && (
+        <>
+          {!result.player1?.player && (
+            <p className="state-box">
+              <span className="state-title">Player 1 not found.</span>
+              <br />
+              Check the spelling and try again.
+            </p>
+          )}
+          {!result.player2?.player && (
+            <p className="state-box">
+              <span className="state-title">Player 2 not found.</span>
+              <br />
+              Check the spelling and try again.
+            </p>
+          )}
+          {result.player1?.player && result.player2?.player && (
+            <>
+              <Card
+                title="Scores and components"
+                description="The difference column is Player 1 minus Player 2."
+              >
+                <DataTable
+                  columns={diffColumns}
+                  rows={buildRows(result.player1, result.player2)}
+                  showRank={false}
+                />
+              </Card>
 
-      {result && (
-        <div className="grid gap-6 lg:grid-cols-2">
-          {[result.player1, result.player2].map((player, idx) => (
-            <section key={player.player} className="overflow-hidden border border-slate-200 bg-white shadow-[0_1px_0_rgba(15,23,42,0.04)] dark:border-slate-800 dark:bg-slate-900">
-              <div className={idx === 0 ? 'bg-slate-900 p-6 text-white' : 'bg-slate-700 p-6 text-white'}>
-                <div className="flex items-center gap-4">
-                  <img
-                    src={player.headshot || player.team_logo || 'https://cdn.nba.com/headshots/nba/latest/260x190/2544.png'}
-                    alt={player.player}
-                    className="h-20 w-20 rounded-sm border border-white/20 object-cover"
-                  />
-                  <div>
-                    <h3 className="text-2xl font-semibold">{player.player}</h3>
-                    <p className="mt-1 text-sm text-slate-200">{player.team} · {player.position}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6">
-                <div className="mb-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
-                  <div className="rounded-sm border border-slate-200 bg-slate-50 p-3 text-center dark:border-slate-700 dark:bg-slate-800">
-                    <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">PTS</p>
-                    <p className="mt-1 text-xl font-semibold text-slate-900 dark:text-white">{player.points || 0}</p>
-                  </div>
-                  <div className="rounded-sm border border-slate-200 bg-slate-50 p-3 text-center dark:border-slate-700 dark:bg-slate-800">
-                    <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">AST</p>
-                    <p className="mt-1 text-xl font-semibold text-slate-900 dark:text-white">{player.assists || 0}</p>
-                  </div>
-                  <div className="rounded-sm border border-slate-200 bg-slate-50 p-3 text-center dark:border-slate-700 dark:bg-slate-800">
-                    <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">REB</p>
-                    <p className="mt-1 text-xl font-semibold text-slate-900 dark:text-white">{player.rebounds || 0}</p>
-                  </div>
-                  <div className="rounded-sm border border-slate-200 bg-slate-50 p-3 text-center dark:border-slate-700 dark:bg-slate-800">
-                    <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">TS%</p>
-                    <p className="mt-1 text-xl font-semibold text-slate-900 dark:text-white">{player.ts_pct ? (player.ts_pct * 100).toFixed(1) : 0}%</p>
-                  </div>
-                </div>
-
-                <div className="mb-6">
-                  <h4 className="mb-3 text-[11px] font-medium uppercase tracking-[0.2em] text-slate-500">Analytics scores</h4>
-                  <div className="grid gap-3 sm:grid-cols-2">
-                    <div className="rounded-sm border border-cyan-200 bg-cyan-50 p-3 dark:border-cyan-800 dark:bg-cyan-950/20">
-                      <p className="text-xs font-medium text-slate-600 dark:text-slate-400">Underrated</p>
-                      <p className="mt-1 text-lg font-semibold text-cyan-700 dark:text-cyan-300">{formatScore(player.scores?.underrated_score)}</p>
-                    </div>
-                    <div className="rounded-sm border border-rose-200 bg-rose-50 p-3 dark:border-rose-800 dark:bg-rose-950/20">
-                      <p className="text-xs font-medium text-slate-600 dark:text-slate-400">Overrated</p>
-                      <p className="mt-1 text-lg font-semibold text-rose-700 dark:text-rose-300">{formatScore(player.scores?.overrated_score)}</p>
-                    </div>
-                    <div className="rounded-sm border border-amber-200 bg-amber-50 p-3 dark:border-amber-800 dark:bg-amber-950/20">
-                      <p className="text-xs font-medium text-slate-600 dark:text-slate-400">Volatility</p>
-                      <p className="mt-1 text-lg font-semibold text-amber-700 dark:text-amber-300">{formatScore(player.scores?.volatility_score)}</p>
-                    </div>
-                    <div className="rounded-sm border border-violet-200 bg-violet-50 p-3 dark:border-violet-800 dark:bg-violet-950/20">
-                      <p className="text-xs font-medium text-slate-600 dark:text-slate-400">Role Compression</p>
-                      <p className="mt-1 text-lg font-semibold text-violet-700 dark:text-violet-300">{formatScore(player.scores?.role_compression_score)}</p>
-                    </div>
-                    <div className="rounded-sm border border-emerald-200 bg-emerald-50 p-3 dark:border-emerald-800 dark:bg-emerald-950/20">
-                      <p className="text-xs font-medium text-slate-600 dark:text-slate-400">Defensive Impact</p>
-                      <p className="mt-1 text-lg font-semibold text-emerald-700 dark:text-emerald-300">{formatScore(player.scores?.defensive_chaos_score)}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="rounded-sm border border-slate-200 bg-slate-50 p-4 dark:border-slate-700 dark:bg-slate-800">
-                  <PlayerRadarChart player={player} />
-                </div>
-              </div>
-            </section>
-          ))}
-        </div>
+              <Card title="Five scores at a glance" description="One horizontal bar per player per metric.">
+                <BarChart groups={chartGroups} axisX="Score (0–100)" axisY="Metric" />
+              </Card>
+            </>
+          )}
+        </>
       )}
     </div>
   )

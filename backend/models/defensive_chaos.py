@@ -31,12 +31,28 @@ def calculate_defensive_chaos_score(player_stats, context):
             weights["defensive_versatility_fallback"],
             STAT_KEYS,
         )
-    team_defensive_impact = weighted_percentile_score(
-        player_stats,
-        context,
-        weights["team_defensive_impact"],
-        STAT_KEYS,
-    )
+    # Placeholder guard: on-off is a hardcoded 0.0 for ~99% of players and the
+    # other tracked team-defensive stats are absent, so a blend built on fewer
+    # than two real inputs would collapse to one constant percentile.
+    team_defensive_impact = None
+    real_team_inputs = [name for name in weights["team_defensive_impact"] if context.get(name)]
+    if len(real_team_inputs) >= 2:
+        team_defensive_impact = weighted_percentile_score(
+            player_stats,
+            context,
+            weights["team_defensive_impact"],
+            STAT_KEYS,
+        )
+    # Fallback: when the tracked team-defensive stats (defensive EPM / on-off /
+    # team defensive rating impact) are absent, use real defensive production
+    # (stocks = steals + blocks) as the proxy so the component varies by player.
+    if team_defensive_impact is None:
+        team_defensive_impact = weighted_percentile_score(
+            player_stats,
+            context,
+            {"stocks": 1.0},
+            STAT_KEYS,
+        )
 
     categories = {
         "defensiveDisruption": defensive_disruption,

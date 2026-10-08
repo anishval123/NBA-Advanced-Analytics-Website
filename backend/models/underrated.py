@@ -2,10 +2,29 @@ from .helpers import clamp_score, weighted_percentile_score
 from .metric_weights import METRIC_WEIGHTS, STAT_KEYS
 
 
+def _real_impact_inputs(context, weights):
+    """Impact inputs that genuinely vary in the dataset.
+
+    BPM / EPM / win shares are absent entirely, and on-off is a placeholder
+    0.0 for ~99% of players (set by the data loaders), so a blend built on
+    fewer than two real inputs would collapse to one constant percentile.
+    """
+    present = [name for name in weights if context.get(name)]
+    return present
+
+
 def calculate_underrated_score(player_stats, context):
     weights = METRIC_WEIGHTS["underrated"]
 
-    impact = weighted_percentile_score(player_stats, context, weights["impact"], STAT_KEYS)
+    impact = None
+    if len(_real_impact_inputs(context, weights["impact"])) >= 2:
+        impact = weighted_percentile_score(player_stats, context, weights["impact"], STAT_KEYS)
+    # Fallback: when the tracked advanced impact stats (BPM / EPM / on-off /
+    # win shares) are absent or placeholder-only for the league, approximate
+    # impact with a points-per-game percentile so the component reflects
+    # actual on-court production instead of collapsing to a constant.
+    if impact is None:
+        impact = weighted_percentile_score(player_stats, context, {"points": 1.0}, STAT_KEYS)
     efficiency = weighted_percentile_score(
         player_stats,
         context,

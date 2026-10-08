@@ -1,0 +1,25 @@
+{
+  "note": "PLACEHOLDER entries for the 'From The Fast Break' row. Replace each [TODO] value with a real video id, title, and link. Thumbnails are generated at https://img.youtube.com/vi/{id}/hqdefault.jpg",
+  "videos": [
+    {
+      "id": "TODO-video-id-1",
+      "title": "[TODO: video title]",
+      "url": "[TODO: full YouTube link]"
+    },
+    {
+      "id": "TODO-video-id-2",
+      "title": "[TODO: video title]",
+      "url": "[TODO: full YouTube link]"
+    },
+    {
+      "id": "TODO-video-id-3",
+      "title": "[TODO: video title]",
+      "url": "[TODO: full YouTube link]"
+    },
+    {
+      "id": "TODO-video-id-4",
+      "title": "[TODO: video title]",
+      "url": "[TODO: full YouTube link]"
+    }
+  ]
+}

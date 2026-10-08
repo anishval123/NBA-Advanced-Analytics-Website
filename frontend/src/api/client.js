@@ -135,3 +135,16 @@ export async function postJson(path, body = {}) {
     throw new Error(`Cannot add a player: the live API ${API_URL} is unreachable (bundled player data is read-only).`)
   }
 }
+
+// Metadata from the bundled data snapshot (used for "last updated" on the home page).
+export async function getSnapshotMeta() {
+  try {
+    const db = await loadSnapshot()
+    return {
+      generatedAt: db?.generated_at || null,
+      source: 'bundled-data-snapshot',
+    }
+  } catch (err) {
+    return { generatedAt: null, source: null }
+  }
+}
